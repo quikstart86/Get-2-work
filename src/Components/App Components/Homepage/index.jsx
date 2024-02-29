@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
-import Logo from '/Users/matt/Desktop/Bootcamp/Get-2-work/src/Images/G2W-Logo.png'; 
+import Logo from '/src/Images/G2W-Logo.png'; 
 import '../Homepage/home.css';
 
 import Button from 'react-bootstrap/Button';
