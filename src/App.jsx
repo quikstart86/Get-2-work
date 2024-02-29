@@ -1,31 +1,32 @@
-import { useState } from 'react'
-import viteLogo from '/assets/vite.svg'
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from 'react'
 import './App.css'
 
+import Navbar from './Components/App Components/Navbar'
+import Homepage from './Components/App Components/Homepage'
+import Step1 from './Components/App Components/step1/Index'
+import Step2 from './Components/App Components/step2/Index'
+import Step3 from './Components/App Components/step3/index'
+import Footer from './Components/App Components/Footer'
+import PortfolioBuilder from './Components/App Components/PortfolioBuilder'
+
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/Step1" element={<Step1 />} />
+          <Route path="/Step2" element={<Step2 />} />
+          <Route path="/Step3" element={<Step3 />} />
+          <Route path="/PortfolioBuilder" element={<PortfolioBuilder />} />
+        </Routes>
+      </Router>
+      <Footer />
     </>
   )
 }
