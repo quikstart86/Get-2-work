@@ -9,7 +9,7 @@ import Step1 from './Components/App Components/step1/Index'
 import Step2 from './Components/App Components/step2/Index'
 import Step3 from './Components/App Components/step3/index'
 import Footer from './Components/App Components/Footer'
-import Render from './Components/App Components/Render'
+import PortfolioBuilder from './Components/App Components/PortfolioBuilder'
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
           <Route path="/Step1" element={<Step1 />} />
           <Route path="/Step2" element={<Step2 />} />
           <Route path="/Step3" element={<Step3 />} />
-          <Route path="/Render" element={<Render />} />
+          <Route path="/PortfolioBuilder" element={<PortfolioBuilder />} />
         </Routes>
       </Router>
       <Footer />
