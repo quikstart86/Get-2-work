@@ -4,7 +4,9 @@ import * as bootstrap from 'bootstrap'
 import Popper from 'popper.js';
 import { useState } from "react"
 import Dropdown from 'react-bootstrap/Dropdown';
-
+import { IoCaretBackSharp } from "react-icons/io5";
+import { IoCaretForward } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 function Index() {
   const [selectedOption, setSelectedOption] = useState('frontEnd');
@@ -14,12 +16,12 @@ function Index() {
   };
 
   return (
-    <div> <h1 className='text-center p-2'> So what kind of developer are you ? </h1>
+    <div> <h1 className='text-center pt-3 p-2'> So what kind of developer are you ? </h1>
       <Dropdown className="text-center" select value={selectedOption} onChange={handleChange}>
         <Dropdown.Toggle variant="success" id="dropdown-basic">
           Dropdown Button
         </Dropdown.Toggle>
-        <Dropdown.Menu>
+        <Dropdown.Menu style={{ justifyContent: "end" }} >
           <Dropdown.Item onClick={() => handleChange('frontEnd')} >Front-End</Dropdown.Item>
           <Dropdown.Item onClick={() => handleChange('backEnd')} >Back-End</Dropdown.Item>
           <Dropdown.Item onClick={() => handleChange('fullStack')} >Full-Stack</Dropdown.Item>
@@ -65,6 +67,10 @@ function Index() {
             <label>Node</label> <br />
           </div>)}
       </div>
+      <div className='position-relative'>
+        <Link to={'/Step1'} ><div className='position-absolute bottom-0 start-0'> <IoCaretBackSharp size={50} style={{ color: "black" }} /> </div> </Link>
+        <Link to={'/Step3'}><div className='position-absolute bottom-0 end-0'> <IoCaretForward size={50} style={{ color: "black" }} /> </div> </Link>
+      </div >
     </div >
   )
 }
