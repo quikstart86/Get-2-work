@@ -1,7 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import * as bootstrap from 'bootstrap'
-import Popper from 'popper.js';
+// import Popper from 'popper.js';
 import { useState } from "react"
 import Dropdown from 'react-bootstrap/Dropdown';
 
@@ -69,4 +69,4 @@ function Index() {
   )
 }
 
-export default Index
+export default Index;
