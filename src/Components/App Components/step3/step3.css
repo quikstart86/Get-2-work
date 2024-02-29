@@ -1,0 +1,8 @@
+.card-margin {
+  margin-left: 10px; /* Adjust the value as needed */
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+  transform: translateY(-5px); /* Move the card slightly upwards on hover */
+}
