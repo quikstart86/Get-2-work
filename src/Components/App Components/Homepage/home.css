@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap');
+p{
+    font-family: "League Spartan", sans-serif;
+    font-size: 3em;
+}
+
+img {
+    max-width: 40%;
+    max-height: 80%;
+}
+
+.mb-2 {
+    color: aqua !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button {
+    width: 400px !important;
+    height: 70px !important;
+    font-family: "League Spartan" !important;
+    font-size: 2em !important;
+    border-radius: 40px !important;
+}

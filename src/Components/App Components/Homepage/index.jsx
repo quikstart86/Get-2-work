@@ -1,9 +1,29 @@
-import React from 'react'
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
+import Logo from '/Users/matt/Desktop/Bootcamp/Get-2-work/src/Images/G2W-Logo.png'; 
+import '../Homepage/home.css';
 
-function index() {
+import Button from 'react-bootstrap/Button';
+
+function Home() {
   return (
-    <div>Home</div>
-  )
+    <div>
+      <img src={Logo} alt="Logo" />
+      <div>
+        <p>Build an interactive, fully functioning, and customizable site in minutes.</p>
+      </div>
+      <div className='getStarted'>
+      <div className="mb-2">
+      <Link to="/step1">
+        <Button variant="secondary" size="lg">
+          Lets get started
+        </Button>
+        </Link>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default index
+export default Home;
