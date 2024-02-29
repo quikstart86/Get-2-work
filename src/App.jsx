@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+
       <Router>
         <Routes>
           <Route path="/" element={<Homepage />} />
@@ -25,6 +25,7 @@ function App() {
           <Route path="/Step3" element={<Step3 />} />
           <Route path="/PortfolioBuilder" element={<PortfolioBuilder />} />
         </Routes>
+        <Navbar />
       </Router>
       <Footer />
     </>
