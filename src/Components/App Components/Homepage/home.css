@@ -2,10 +2,23 @@
 p{
     font-family: "League Spartan", sans-serif;
     font-size: 3em;
+    padding-left: 30px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    animation: typing 3s steps(90, end); 
 }
 
+    @keyframes typing {
+        from {
+    width: 0; 
+        }
+        to {
+        width: 100%; 
+        }
+    }
+
 img {
-    max-width: 40%;
+    max-width: 30%;
     max-height: 80%;
 }
 
@@ -23,4 +36,13 @@ button {
     font-family: "League Spartan" !important;
     font-size: 2em !important;
     border-radius: 40px !important;
+    background-color: red !important;
+    transition: background-color 0.8s ease, color 0.8s ease;
+    border-style: none !important;
+}
+
+button:hover  {
+background: none !important;
+color: black !important;
+border-style: none !important;
 }
