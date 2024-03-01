@@ -1,4 +1,4 @@
-.footer-div p {
+.footer-div, .p {
     color: black; 
     font-size: 1em !important;
 }
