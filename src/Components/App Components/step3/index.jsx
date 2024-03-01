@@ -67,7 +67,7 @@ function Step3() {
       </div>
       <div className="row mt-4">
         <div className="col text-center">
-          <Link to={{ pathname: "/next-page", state: { selectedTheme } }}>
+          <Link to={{ pathname: "/PortfolioBuilder", state: { selectedTheme } }}>
             <Button variant="primary" disabled={!selectedTheme}>
               Apply Theme
             </Button>
