@@ -10,11 +10,11 @@ function Index() {
         {/* Logo */}
         <div className="col-md-6 d-flex">
           <Navbar.Brand href="#home">
-            {/* <img
+            <img
               src="./src/Images/G2W-Logo.png"
               className="d-inline-block align-top"
               alt="Logo"
-            /> */}
+            />
           </Navbar.Brand>
         </div>
 
@@ -24,10 +24,10 @@ function Index() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
               {/* Placeholder Nav items */}
-              <Nav.Link href="#home">Home</Nav.Link>
+              {/* <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#services">Services</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </div>
