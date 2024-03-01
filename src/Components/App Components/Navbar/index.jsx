@@ -4,6 +4,11 @@ import './Navbar.css'; // Import your CSS file
 
 function Index() {
   return (
+    <div>
+      
+    </div>
+  )
+=======
     <Navbar bg="light" expand="lg">
       <Container fluid>
         {/* Logo */}
