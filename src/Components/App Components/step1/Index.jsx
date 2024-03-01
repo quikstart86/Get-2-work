@@ -42,7 +42,7 @@
 //               {loading && <div className="step1-loading">Loading...</div>}
 //               {suggestions.map((suggestion, index) => {
 //                 const className = suggestion.active
-//                   ? 'suggestion-item--active'
+//                    ? 'suggestion-item--active'
 //                   : 'suggestion-item';
 //                 const style = suggestion.active
 //                   ? { backgroundColor: '#fafafa', cursor: 'pointer' }
@@ -87,10 +87,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Form, Button } from 'react-bootstrap'; // Import React Bootstrap components
-import PlacesAutocomplete, {
-  geocodeByAddress,
-  getLatLng,
-} from 'react-places-autocomplete';
+// import PlacesAutocomplete, {
+//   geocodeByAddress,
+//   getLatLng,
+// } from "react-places-autocomplete";
 import './step1.css';
 
 function Step1() {

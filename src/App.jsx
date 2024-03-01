@@ -1,7 +1,7 @@
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import React from 'react'
-import './App.css'
+import React from 'react';
+import './App.css';
 
 import Navbar from './Components/App Components/Navbar'
 import Homepage from './Components/App Components/Homepage'
@@ -32,4 +32,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
