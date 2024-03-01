@@ -1,8 +1,49 @@
+/* Card Margins */
 .card-margin {
   margin-left: 10px; /* Adjust the value as needed */
 }
 
+/* Card Hover Effect */
 .card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
   transform: translateY(-5px); /* Move the card slightly upwards on hover */
+}
+
+/* Selected Card Styling */
+.selected {
+  border: 3px solid red; /* Add red border to the selected card */
+}
+
+/* Card Text Alignment */
+.card-text {
+  align-items: center;
+}
+
+/* Light Theme */
+.light {
+  --primary-color: #427aa1;
+  --secondary-color: #ebf2fa;
+  --accent-color: #679436;
+}
+
+.light .card {
+  background-color: var(--secondary-color);
+}
+
+/* Dark Theme */
+.dark {
+  --primary-color: #25455b;
+  --secondary-color: #4083cf;
+  --accent-color: #3a541e;
+}
+
+.dark .card {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Colourful Theme */
+.colourful {
+  --primary-color: #ffba49;
+  --secondary-color: #
 }
