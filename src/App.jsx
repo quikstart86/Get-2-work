@@ -5,9 +5,9 @@ import './App.css'
 
 import Navbar from './Components/App Components/Navbar'
 import Homepage from './Components/App Components/Homepage'
-import Step1 from './Components/App Components/step1/Index'
-import Step2 from './Components/App Components/step2/index'
-import Step3 from './Components/App Components/step3/index'
+import Step1 from './Components/App Components/step1/Index.jsx'
+import Step2 from './Components/App Components/step2/Index.jsx'
+import Step3 from './Components/App Components/step3/index.jsx'
 import Footer from './Components/App Components/Footer'
 import PortfolioBuilder from './Components/App Components/PortfolioBuilder'
 
