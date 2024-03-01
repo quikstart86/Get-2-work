@@ -11,16 +11,17 @@ import Footer from './Components/App Components/Footer';
 import PortfolioBuilder from './Components/App Components/PortfolioBuilder';
 
 function App() {
-  // const location = useLocation();
-
-  // Check if the current location is not the home page
-  // const showNavbar = location.pathname !== '/';
-
   return (
     <>
+
       <Router>
         {/* Conditionally render the navbar */}
         <Navbar />
+        {/* Video background */}
+        <video autoPlay loop muted className="video-bg">
+        <source src="./src/Images/Background-GP.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/Step1" element={<Step1 />} />
