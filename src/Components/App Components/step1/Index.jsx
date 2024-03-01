@@ -151,7 +151,7 @@ function Step1() {
         </Form.Group>
 
         <div className="button-container">
-          <Link to="/Step2">
+          <Link to="/step2">
             <Button variant="primary" onClick={handleNext}>Next</Button>
           </Link>
         </div>

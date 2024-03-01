@@ -1,0 +1,15 @@
+.footer-div p {
+    color: black; 
+    font-size: 1em !important;
+}
+
+.footer-div h4 {
+    color: black; 
+    font-size: 1em !important;
+}
+
+footer {
+    display: flex; 
+    background-color: none !important;
+    color: black; 
+}
