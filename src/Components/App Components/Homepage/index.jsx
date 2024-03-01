@@ -7,12 +7,13 @@
 
 function Homepage() {
   return (
-
     <div>
+      <div className='homeLogo'>
       <img src={Logo} alt="Get To Work logo" />
         <div> 
           <div className='textAnimation'>
           <p>Build an interactive, fully functioning, and customizable website in minutes.</p>
+          </div>
           </div>
           </div>
 
@@ -25,7 +26,8 @@ function Homepage() {
       </Link>
       </div>
     </div>
-  </div>
+    </div>
+
   );
 }
 
