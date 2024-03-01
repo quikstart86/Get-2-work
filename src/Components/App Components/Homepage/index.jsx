@@ -5,13 +5,13 @@ import Logo from '/Users/matt/Desktop/Bootcamp/Get-2-work/src/Images/G2W-Logo.pn
 import '../Homepage/home.css';
 import Button from 'react-bootstrap/Button';
 
-function Home() {
+function Homepage() {
   return (
     <div>
       <img src={Logo} alt="Get To Work logo" />
       <div>
         <div className='textAnimation'>
-        <p>Build an interactive, fully functioning, and customizable site in minutes.</p>
+        <p>Build an interactive, fully functioning, and customizable website in minutes.</p>
         </div>
       </div>
       <div className='getStarted'>
@@ -27,4 +27,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Homepage
