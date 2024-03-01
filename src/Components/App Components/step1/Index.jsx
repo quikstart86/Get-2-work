@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Form, Button } from 'react-bootstrap'; // Import React Bootstrap components
+import { Form, Button, InputGroup } from 'react-bootstrap'; // Import React Bootstrap components
+import { HiOutlineMail } from 'react-icons/hi'; // Import email icon
+import { AiOutlineGithub } from 'react-icons/ai'; // Import GitHub icon
+import { FaLinkedin } from 'react-icons/fa'; // Import LinkedIn icon
 import PlacesAutocomplete, {
   geocodeByAddress,
   getLatLng,
@@ -9,6 +12,9 @@ import './step1.css';
 
 function Step1() {
   const [address, setAddress] = React.useState('');
+  const [email, setEmail] = React.useState('');
+  const [github, setGithub] = React.useState('');
+  const [linkedin, setLinkedin] = React.useState('');
 
   const handleSelect = async (value) => {
     setAddress(value);
@@ -62,6 +68,33 @@ function Step1() {
         <Form.Group controlId="formBio">
           <Form.Label>Short Bio:</Form.Label>
           <Form.Control as="textarea" rows={4} placeholder="Enter a short bio (max 30 words)" maxLength={150} />
+        </Form.Group>
+
+        {/* Email Address */}
+        <Form.Group controlId="formEmail">
+          {/* <Form.Label>Email Address:</Form.Label> */}
+          <InputGroup className="input-group">
+            <HiOutlineMail className="input-icon" />
+            <Form.Control type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} />
+          </InputGroup>
+        </Form.Group>
+
+        {/* GitHub Username */}
+        <Form.Group controlId="formGithub">
+          {/* <Form.Label>Github Username:</Form.Label> */}
+          <InputGroup className="input-group">
+            <AiOutlineGithub className="input-icon" />
+            <Form.Control type="text" placeholder="Github username" value={github} onChange={(e) => setGithub(e.target.value)} />
+          </InputGroup>
+        </Form.Group>
+
+        {/* LinkedIn Profile */}
+        <Form.Group controlId="formLinkedin">
+          {/* <Form.Label>LinkedIn:</Form.Label> */}
+          <InputGroup className="input-group">
+            <FaLinkedin className="input-icon" />
+            <Form.Control type="text" placeholder="LinkedIn profile URL" value={linkedin} onChange={(e) => setLinkedin(e.target.value)} />
+          </InputGroup>
         </Form.Group>
 
         <div className="button-container">

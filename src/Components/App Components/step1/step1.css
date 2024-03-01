@@ -60,3 +60,19 @@
   font-style: italic;
   color: #777;
 }
+
+.input-group {
+  margin: 20px 0px; /* Add spacing between form fields */
+}
+
+.input-icon {
+  font-size: 2.5em; /* Adjust icon size */
+  padding-right: 10px;
+  color: red; /* Add padding to the right of the icon */
+}
+
+/* Adjust the width of the icons */
+.input-group .input-icon svg {
+  width: 3em;
+  height: 3em;
+}
