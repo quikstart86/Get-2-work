@@ -87,10 +87,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Form, Button } from 'react-bootstrap'; // Import React Bootstrap components
-// import PlacesAutocomplete, {
-//   geocodeByAddress,
-//   getLatLng,
-// } from "react-places-autocomplete";
+import PlacesAutocomplete, {
+  geocodeByAddress,
+  getLatLng,
+} from "react-places-autocomplete";
 import './step1.css';
 
 function Step1() {
