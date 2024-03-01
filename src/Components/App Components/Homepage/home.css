@@ -1,21 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap');
-p{
+
+p {
     font-family: "League Spartan", sans-serif;
     font-size: 3em;
     padding-left: 30px;
-    overflow: hidden; 
-    white-space: nowrap; 
-    animation: typing 3s steps(90, end); 
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(90, end);
 }
 
-    @keyframes typing {
-        from {
-    width: 0; 
-        }
-        to {
-        width: 100%; 
-        }
+@keyframes typing {
+    from {
+        width: 0;
     }
+
+    to {
+        width: 100%;
+    }
+}
 
 img {
     max-width: 30%;
@@ -27,7 +29,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 button {
@@ -41,8 +43,8 @@ button {
     border-style: none !important;
 }
 
-button:hover  {
-background: none !important;
-color: black !important;
-border-style: none !important;
+button:hover {
+    background: none !important;
+    color: black !important;
+    border-style: none !important;
 }

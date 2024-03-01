@@ -1,13 +1,13 @@
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import React from 'react'
-import './App.css'
+import React from 'react';
+import './App.css';
 
 import Navbar from './Components/App Components/Navbar'
 import Homepage from './Components/App Components/Homepage'
-import Step1 from './Components/App Components/step1/Index'
-import Step2 from './Components/App Components/step2/Index'
-import Step3 from './Components/App Components/step3/index'
+import Step1 from './Components/App Components/step1/Index.jsx'
+import Step2 from './Components/App Components/step2/Index.jsx'
+import Step3 from './Components/App Components/step3/index.jsx'
 import Footer from './Components/App Components/Footer'
 import PortfolioBuilder from './Components/App Components/PortfolioBuilder'
 
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+
       <Router>
         <Routes>
           <Route path="/" element={<Homepage />} />
@@ -25,10 +25,11 @@ function App() {
           <Route path="/Step3" element={<Step3 />} />
           <Route path="/PortfolioBuilder" element={<PortfolioBuilder />} />
         </Routes>
+        <Navbar />
       </Router>
       <Footer />
     </>
   )
 }
 
-export default App
+export default App;
