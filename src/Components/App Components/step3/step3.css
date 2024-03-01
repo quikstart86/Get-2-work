@@ -14,9 +14,9 @@
   border: 3px solid red; /* Add red border to the selected card */
 }
 
-/* Card Text Alignment */
+/* Text Alignment */
 .card-text {
-  align-items: center;
+  text-align: center; /* Center align text within cards */
 }
 
 /* Light Theme */
@@ -27,7 +27,7 @@
 }
 
 .light .card {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color); /* Apply secondary color as background */
 }
 
 /* Dark Theme */
@@ -38,12 +38,16 @@
 }
 
 .dark .card {
-  background-color: var(--primary-color);
-  color: white;
+  background-color: var(--primary-color); /* Apply primary color as background */
+  color: white; /* Set text color to white */
 }
 
 /* Colourful Theme */
 .colourful {
   --primary-color: #ffba49;
-  --secondary-color: #
+  --secondary-color: #20a39e; /* Update with a valid secondary color */
+}
+
+.colourful .card {
+  background-color: var(--primary-color); /* Apply primary color as background */
 }
