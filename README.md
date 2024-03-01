@@ -1,11 +1,6 @@
-# React + Vite
+# Get To Work
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description 
 
-Currently, two official plugins are available:
+‘Get To Work’ is a simple one-page portfolio website building app. Aimed at web-developers seeking work, it will help users create a one page portfolio/CV website by having them answer a few simple questions about themselves. It will then output this code as HTML, CSS, and Javascript files (and email them to the user) for them to use as the foundation of their own website. The idea is to cut down the initial legwork of creating their portfolio website allowing them to Get To Work faster.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refres
-
-
-Test 123

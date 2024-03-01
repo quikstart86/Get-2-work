@@ -1,4 +1,4 @@
-/* Navbar styles
+/*Navbar styles
 .navbar {
   margin-bottom: 40px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
@@ -6,9 +6,8 @@
 
 /* Logo styles */
 /* .navbar-brand img {
-  /* max-height: 450px;
-  padding-left: 50px; */
-/* } */ 
+  max-height: 450px;
+  padding-left: 50px; } */
 
 /* Navbar links styles */
 .navbar-nav {
@@ -28,4 +27,8 @@
 .navbar .container {
   background-color: none !important;
   align-items: center;
+}
+
+a.nav-link {
+font-size: 2em !important;
 }
