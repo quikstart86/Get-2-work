@@ -1,29 +1,37 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import '../Footer/footer.css';
+import { FaFacebook, FaTwitter, FaGithub } from 'react-icons/fa';
 
-function Index() {
+const Footer = () => {
+
+
   return (
-    <footer className="text-light py-3">
-      <div className='fixed-bottom'>
+    <footer className="footer text-center" style={footerStyle}>
       <Container>
-        <Row>
-          <div className='footer-div'>
-          <Col xs={12} md={6}>
-            <h4>Contact Us </h4>
-            <p>Email: THIS IS PLACEHOLDER</p>
-            <p>Phone: THIS IS PLACEHOLDER</p>
+        <Row className="mb-5">
+          <Col className="list-inline-item">
+            <a className="link-light social-link rounded-circle" href="#" style={socialLinkStyle}>
+              Button 1
+            </a>
           </Col>
-          <Col xs={12} md={6}>
-            <h4>Follow Us</h4>
-            <p>Facebook | Twitter | Instagram</p>
+          <Col className="list-inline-item">
+            <a className="link-light social-link rounded-circle" href="#" style={socialLinkStyle}>
+              Button 2
+            </a>
           </Col>
-          </div>
+          <Col className="list-inline-item">
+            <a className="link-light social-link rounded-circle" href="#" style={socialLinkStyle}>
+              Button 3
+            </a>
+          </Col>
         </Row>
+        <p className="text-muted mb-0 small">Copyright &nbsp;© Get To Work 2024</p>
       </Container>
-      </div>
+      <a className="js-scroll-trigger scroll-to-top rounded" href="#page-top">
+        <i className="fa fa-angle-up"></i>
+      </a>
     </footer>
   );
-}
+};
 
-export default Index;
+export default Footer;
