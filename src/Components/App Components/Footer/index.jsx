@@ -1,5 +1,8 @@
+// footer - Index.jsx
+
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'; // Import Font Awesome icons
 import './footer.css';
 
 function Footer() {
@@ -8,15 +11,15 @@ function Footer() {
       <Container>
         <Row>
           <div className="footer-div">
-            {/* <Col xs={12} md={6}>
-              <h4>Contact Us</h4>
-              <p>Email: THIS IS PLACEHOLDER</p>
-              <p>Phone: THIS IS PLACEHOLDER</p>
-            </Col> */}
-            {/* <Col xs={12} md={6}> */}
+            <Col xs={12}>
               <h4>Follow Us</h4>
-              <p>Facebook | Twitter | Instagram</p>
-            {/* </Col> */}
+              {/* Use Font Awesome icons with the custom style */}
+              <p>
+                <FaFacebook className="footer-icon" /> {/* Apply the custom style */}
+                <FaTwitter className="footer-icon" />
+                <FaInstagram className="footer-icon" />
+              </p>
+            </Col>
           </div>
         </Row>
       </Container>
