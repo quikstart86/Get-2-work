@@ -1,31 +1,8 @@
-// import React from 'react';
-// import { Container, Row, Col } from 'react-bootstrap';
+// footer - Index.jsx
 
-// import { FaFacebook, FaTwitter, FaGithub } from 'react-icons/fa';
-
-// const Footer = () => {
-
-
-//   return (
-//     <footer className="footer text-center" style={footerStyle}>
-//       <Container>
-//         <Row className="mb-5">
-//           <Col className="list-inline-item">
-//             <a className="link-light social-link rounded-circle" href="#" style={socialLinkStyle}>
-//               Button 1
-//             </a>
-//           </Col>
-//           <Col className="list-inline-item">
-//             <a className="link-light social-link rounded-circle" href="#" style={socialLinkStyle}>
-//               Button 2
-//             </a>
-//           </Col>
-//           <Col className="list-inline-item">
-//             <a className="link-light social-link rounded-circle" href="#" style={socialLinkStyle}>
-//               Button 3
-//             </a>
-//           </Col>
-
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'; // Import Font Awesome icons
 import './footer.css';
 
 function Footer() {
@@ -34,15 +11,14 @@ function Footer() {
       <Container>
         <Row>
           <div className="footer-div">
-            {/* <Col xs={12} md={6}>
-              <h4>Contact Us</h4>
-              <p>Email: THIS IS PLACEHOLDER</p>
-              <p>Phone: THIS IS PLACEHOLDER</p>
-            </Col> */}
-            {/* <Col xs={12} md={6}> */}
+            <Col xs={12}>
               <h4>Follow Us</h4>
-              <p>Facebook | Twitter | Instagram</p>
-            {/* </Col> */}
+              <p>
+                <FaFacebook className="footer-icon" />
+                <FaTwitter className="footer-icon" />
+                <FaInstagram className="footer-icon" />
+              </p>
+            </Col>
           </div>
 
         </Row>
@@ -54,6 +30,6 @@ function Footer() {
       </a>
     </footer>
   );
-};
+}
 
 export default Footer;
