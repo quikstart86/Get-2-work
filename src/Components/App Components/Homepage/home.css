@@ -1,40 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap');
 
+.container-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
 .textAnimation p {
   font-family: "League Spartan", sans-serif;
-  font-size: 2em;
-  overflow: hidden; 
+  font-size: 1.5em;
+  overflow: hidden;
   white-space: nowrap;
-  animation: typing 2.6s steps(1000, end); 
+  animation: typing 2.6s steps(1000, end);
 }
 
 @keyframes typing {
   from {
-    width: 0; 
+    width: 0;
   }
   to {
-    width: 100%; 
+    width: 100%;
   }
 }
 
-.homeLogo, img {
-  max-width: 50%;
-  max-height: 80%;
+.homeContent img {
+  max-width: 300px;
+  height: auto;
 }
 
+
 .getStarted button {
-  width: 400px;
-  height: 70px !important;
+  float: right;
+  width: 25%;
+  height: 50px !important;
   font-family: "League Spartan" !important;
-  font-size: 1.6em !important;
+  font-size: 1.2em !important;
   border-radius: 40px !important;
-  background-color: red !important;
+  background-color: #d80202 !important;
   transition: background-color 0.8s ease, color 0.8s ease;
   border-style: none !important;
 }
 
 .getStarted button:hover {
-  background: none !important;
-  color: black !important;
+  background: #bc0000 !important;
   border-style: none !important;
+}
+
+
+body .btn-primary {
+  background-color: #d80202;
+  border: none;
+}
+
+body .btn-primary:hover {
+  background-color: #bc0000;
+  border: none;
 }
