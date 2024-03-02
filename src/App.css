@@ -45,7 +45,7 @@ body .btn-primary:hover {
 
 /* MEDIA QUERIES */
 
-@media (max-height: 970px) {
+@media (max-height: 750px) {
   .footer {
     display: none;
   }

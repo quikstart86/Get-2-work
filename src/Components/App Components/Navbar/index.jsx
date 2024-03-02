@@ -14,7 +14,7 @@ function Index() {
     <>{showNavbar ? (
 <div className="navigation">
       <Navbar expand="lg">
-        <Container>
+        <Container className='short-navbar'>
           {/* Logo */}
           <div className="col-md-6 d-flex">
             <Navbar.Brand href="#home">
