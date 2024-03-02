@@ -1,30 +1,30 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+// import React from 'react';
+// import { Container, Row, Col } from 'react-bootstrap';
 
-import { FaFacebook, FaTwitter, FaGithub } from 'react-icons/fa';
+// import { FaFacebook, FaTwitter, FaGithub } from 'react-icons/fa';
 
-const Footer = () => {
+// const Footer = () => {
 
 
-  return (
-    <footer className="footer text-center" style={footerStyle}>
-      <Container>
-        <Row className="mb-5">
-          <Col className="list-inline-item">
-            <a className="link-light social-link rounded-circle" href="#" style={socialLinkStyle}>
-              Button 1
-            </a>
-          </Col>
-          <Col className="list-inline-item">
-            <a className="link-light social-link rounded-circle" href="#" style={socialLinkStyle}>
-              Button 2
-            </a>
-          </Col>
-          <Col className="list-inline-item">
-            <a className="link-light social-link rounded-circle" href="#" style={socialLinkStyle}>
-              Button 3
-            </a>
-          </Col>
+//   return (
+//     <footer className="footer text-center" style={footerStyle}>
+//       <Container>
+//         <Row className="mb-5">
+//           <Col className="list-inline-item">
+//             <a className="link-light social-link rounded-circle" href="#" style={socialLinkStyle}>
+//               Button 1
+//             </a>
+//           </Col>
+//           <Col className="list-inline-item">
+//             <a className="link-light social-link rounded-circle" href="#" style={socialLinkStyle}>
+//               Button 2
+//             </a>
+//           </Col>
+//           <Col className="list-inline-item">
+//             <a className="link-light social-link rounded-circle" href="#" style={socialLinkStyle}>
+//               Button 3
+//             </a>
+//           </Col>
 
 import './footer.css';
 
