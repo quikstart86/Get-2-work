@@ -11,6 +11,7 @@
   overflow: hidden;
   white-space: nowrap;
   animation: typing 2.6s steps(1000, end);
+
 }
 
 @keyframes typing {
@@ -43,8 +44,8 @@
 .getStarted button:hover {
   background: #bc0000 !important;
   border-style: none !important;
-}
 
+}
 
 body .btn-primary {
   background-color: #d80202;
@@ -55,3 +56,4 @@ body .btn-primary:hover {
   background-color: #bc0000;
   border: none;
 }
+
