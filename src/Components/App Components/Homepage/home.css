@@ -6,6 +6,7 @@
   overflow: hidden; 
   white-space: nowrap;
   animation: typing 2.6s steps(1000, end); 
+  padding-left: 10px;
 }
 
 @keyframes typing {
@@ -20,6 +21,7 @@
 .homeLogo, img {
   max-width: 50%;
   max-height: 80%;
+  padding-left: 10px;
 }
 
 .getStarted button {
