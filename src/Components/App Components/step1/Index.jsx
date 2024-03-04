@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Form, Button, InputGroup } from 'react-bootstrap'; // Import React Bootstrap components
-import { HiOutlineMail } from 'react-icons/hi'; // Import email icon
-import { AiOutlineGithub } from 'react-icons/ai'; // Import GitHub icon
-import { FaLinkedin } from 'react-icons/fa'; // Import LinkedIn icon
+import { Form, Button, InputGroup } from 'react-bootstrap';
+import { HiOutlineMail } from 'react-icons/hi';
+import { AiOutlineGithub } from 'react-icons/ai';
+import { FaLinkedin } from 'react-icons/fa';
 import PlacesAutocomplete, {
   geocodeByAddress,
   getLatLng,
@@ -11,10 +11,12 @@ import PlacesAutocomplete, {
 import './step1.css';
 
 function Step1() {
-  const [address, setAddress] = React.useState('');
-  const [email, setEmail] = React.useState('');
-  const [github, setGithub] = React.useState('');
-  const [linkedin, setLinkedin] = React.useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [address, setAddress] = useState('');
+  const [email, setEmail] = useState('');
+  const [github, setGithub] = useState('');
+  const [linkedin, setLinkedin] = useState('');
 
   const handleSelect = async (value) => {
     setAddress(value);
@@ -24,6 +26,13 @@ function Step1() {
   };
 
   const handleNext = () => {
+    // Store the user's information in local storage
+    localStorage.setItem('firstName', firstName);
+    localStorage.setItem('lastName', lastName);
+    localStorage.setItem('address', address);
+    localStorage.setItem('email', email);
+    localStorage.setItem('github', github);
+    localStorage.setItem('linkedin', linkedin);
     // Handle next logic
   };
 
@@ -36,11 +45,19 @@ function Step1() {
       </div>
       <div className="input-section">
         <Form>
-          <Form.Group controlId="formName">
-            <Form.Label>Name:</Form.Label>
-            <Form.Control type="text" placeholder="Enter your name" />
+          {/* First Name */}
+          <Form.Group controlId="formFirstName">
+            <Form.Label>First Name:</Form.Label>
+            <Form.Control type="text" placeholder="Enter your first name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
           </Form.Group>
 
+          {/* Last Name */}
+          <Form.Group controlId="formLastName">
+            <Form.Label>Last Name:</Form.Label>
+            <Form.Control type="text" placeholder="Enter your last name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
+          </Form.Group>
+
+          {/* Location */}
           <Form.Group controlId="formLocation">
             <Form.Label>Location:</Form.Label>
             <PlacesAutocomplete
@@ -71,6 +88,7 @@ function Step1() {
             </PlacesAutocomplete>
           </Form.Group>
 
+          {/* Bio */}
           <Form.Group controlId="formBio">
             <Form.Label>Short Bio:</Form.Label>
             <Form.Control as="textarea" rows={4} placeholder="Enter a short bio (max 30 words)" maxLength={150} />
@@ -78,7 +96,6 @@ function Step1() {
 
           {/* Email Address */}
           <Form.Group controlId="formEmail">
-            {/* <Form.Label>Email Address:</Form.Label> */}
             <InputGroup className="input-group">
               <HiOutlineMail className="input-icon" />
               <Form.Control type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} />
@@ -87,7 +104,6 @@ function Step1() {
 
           {/* GitHub Username */}
           <Form.Group controlId="formGithub">
-            {/* <Form.Label>Github Username:</Form.Label> */}
             <InputGroup className="input-group">
               <AiOutlineGithub className="input-icon" />
               <Form.Control type="text" placeholder="Github username" value={github} onChange={(e) => setGithub(e.target.value)} />
@@ -96,16 +112,16 @@ function Step1() {
 
           {/* LinkedIn Profile */}
           <Form.Group controlId="formLinkedin">
-            {/* <Form.Label>LinkedIn:</Form.Label> */}
             <InputGroup className="input-group">
               <FaLinkedin className="input-icon" />
               <Form.Control type="text" placeholder="LinkedIn profile URL" value={linkedin} onChange={(e) => setLinkedin(e.target.value)} />
             </InputGroup>
           </Form.Group>
 
+          {/* Next Button */}
           <div className="button-container">
             <Link to="/step2">
-              <Button variant="primary" onClick={handleNext}>Next</Button>
+              <Button variant="gtw" onClick={handleNext}>Next</Button>
             </Link>
           </div>
         </Form>

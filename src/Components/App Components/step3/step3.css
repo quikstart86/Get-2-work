@@ -1,53 +1,73 @@
-/* Card Margins */
-.card-margin {
-  margin-left: 10px; /* Adjust the value as needed */
+/* Container styles */
+.step3-container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Card Hover Effect */
+/* Heading styles */
+.step3-container h2 {
+  text-align: center;
+}
+
+/* Paragraph styles */
+.step3-container p {
+  text-align: center;
+}
+
+.step3-container .button-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Card margin */
+.card-margin {
+  margin-left: 10px; /* Adjust as needed */
+}
+
+/* Card hover effect */
 .card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
   transform: translateY(-5px); /* Move the card slightly upwards on hover */
 }
 
-/* Selected Card Styling */
+/* Selected card styling */
 .selected {
   border: 3px solid red; /* Add red border to the selected card */
 }
 
-/* Text Alignment */
+/* Text alignment within cards */
 .card-text {
   text-align: center; /* Center align text within cards */
 }
 
-/* Light Theme */
+/* Button styles */
+.container .btn {
+  margin-top: 20px;
+}
+
+/* Apply the theme-specific styles */
 .light {
   --primary-color: #427aa1;
   --secondary-color: #ebf2fa;
   --accent-color: #679436;
 }
 
-.light .card {
-  background-color: var(--secondary-color); /* Apply secondary color as background */
-}
-
-/* Dark Theme */
 .dark {
   --primary-color: #25455b;
   --secondary-color: #4083cf;
   --accent-color: #3a541e;
 }
 
-.dark .card {
-  background-color: var(--primary-color); /* Apply primary color as background */
-  color: white; /* Set text color to white */
-}
-
-/* Colourful Theme */
 .colourful {
   --primary-color: #ffba49;
   --secondary-color: #20a39e; /* Update with a valid secondary color */
-}
-
-.colourful .card {
-  background-color: var(--primary-color); /* Apply primary color as background */
 }

@@ -20,9 +20,9 @@ function Step3() {
   localStorage.setItem("themeData", JSON.stringify(selectedTheme))
 
   return (
-    <div className="container py-4 py-xl-5">
+    <div className="step3-container py-4 py-xl-4">
       <div className="row mb-5">
-        <div className="col-md-8 col-xl-6 text-center mx-auto">
+        <div className="col-md-8 col-xl-8 text-center mx-auto">
           <h2>Choose your theme</h2>
           <p className="w-lg-50">
             Now you get to pick your theme that reflects you and your portfolio!
@@ -70,11 +70,19 @@ function Step3() {
       <div className="row mt-4">
         <div className="col text-center">
           <Link to={{ pathname: "/PortfolioBuilder", state: { selectedTheme } }}>
-            <Button variant="primary" disabled={!selectedTheme}>
+            <Button variant="gtw" disabled={!selectedTheme}>
               Apply Theme
             </Button>
           </Link>
         </div>
+      </div>
+      <div className='button-container'>
+        <Link to={'/Step2'}>
+          <Button variant="gtw">Prev</Button>
+        </Link>
+        <Link to={'/Step4'}>
+          <Button variant="gtw">Next</Button>
+        </Link>
       </div>
     </div>
   );

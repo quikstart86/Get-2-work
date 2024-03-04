@@ -49,6 +49,11 @@ function Index() {
 
     //I am setting the selected value to the value of the dropdown on click which is done later
     setSelectedOption(value);
+    setShowSkills(false); // Reset showSkills to false
+    // Set showSkills to true after a brief delay
+    setTimeout(() => {
+      setShowSkills(true);
+    }, 100);
   };
 
   const HandlesetOptions = (ckBox) => {
@@ -85,10 +90,11 @@ function Index() {
 
 
   return (
-    <div> <h1 className='text-center pt-3 p-2'> So what kind of developer are you ? </h1>
+    <div className="step2-container">
+      <h2 className='text-center pt-3 p-4'>So, {firstName}, what kind of developer are you?</h2>
       <Dropdown className="text-center" select value={selectedOption} onChange={handleChange}>
-        <Dropdown.Toggle variant="success" id="dropdown-basic">
-          Dropdown Button
+        <Dropdown.Toggle variant="gtw" id="dropdown-basic">
+          I am a...
         </Dropdown.Toggle>
         <Dropdown.Menu style={{ justifyContent: "end" }} >
           {/* on click I am setting thhe value of the handleChange to the selectedOption  */}
@@ -145,12 +151,8 @@ function Index() {
             <label>Node</label> <br />
           </div>)}
       </div>
-      <div className='position-relative'>
-        <Link to={'/Step1'} ><div className='position-absolute bottom-0 start-0'> <IoCaretBackSharp size={50} style={{ color: "black" }} /> </div> </Link>
-        <Link to={'/Step3'}><div className='position-absolute bottom-0 end-0'> <IoCaretForward size={50} style={{ color: "black" }} /> </div> </Link>
-      </div >
-    </div >
+    </div>
   )
 }
 
-export default Index;
+export default Step2;

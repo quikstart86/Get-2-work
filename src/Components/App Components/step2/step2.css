@@ -1,0 +1,76 @@
+/* Container styles */
+.step2-container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styles */
+.step2-container h1,
+.step2-container h2 {
+  text-align: center;
+}
+
+/* Dropdown styles */
+.step2-container .text-center {
+  text-align: center;
+}
+
+#dropdown-basic {
+  width: 200px;
+  font-size: 20px;
+}
+
+/* Checkbox section styles */
+.step2-container .text-center > div {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Button container styles */
+.step2-container .button-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Button styles */
+.step2-container .button-container > a {
+  margin: 0 10px;
+}
+
+/* Additional styles for checkbox labels */
+.step2-container input[type="checkbox"] + label {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.frontEnd {
+  text-align: left;
+}
+
+.backEnd {
+  text-align: left;
+}
+
+.fullStack {
+  text-align: left;
+}
+
+/* Hide the section by default */
+.skill-section {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Show the section when it's visible */
+.skill-section.visible {
+  opacity: 1;
+}
