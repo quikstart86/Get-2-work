@@ -26,20 +26,11 @@
   --accent-color: #B8EBE7;
 }
 
-.light .card {
-  background-color: var(--secondary-color); /* Apply secondary color as background */
-}
-
 /* Dark Theme */
 .dark {
   --primary-color: #2F7F9E;
   --secondary-color: #4C595E;
   --accent-color: #141F24;
-}
-
-.dark .card {
-  background-color: var(--primary-color); /* Apply primary color as background */
-  color: white; /* Set text color to white */
 }
 
 /* Colourful Theme */
@@ -49,6 +40,3 @@
   --accent-color: #A5F301;
 }
 
-.colourful .card {
-  background-color: var(--primary-color); /* Apply primary color as background */
-}
