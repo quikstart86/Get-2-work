@@ -21,9 +21,9 @@
 
 /* Light Theme */
 .light {
-  --primary-color: #427aa1;
-  --secondary-color: #ebf2fa;
-  --accent-color: #679436;
+  --primary-color: #5E7B9B;
+  --secondary-color: #ECEBEB;
+  --accent-color: #B8EBE7;
 }
 
 .light .card {
@@ -32,9 +32,9 @@
 
 /* Dark Theme */
 .dark {
-  --primary-color: #25455b;
-  --secondary-color: #4083cf;
-  --accent-color: #3a541e;
+  --primary-color: #2F7F9E;
+  --secondary-color: #4C595E;
+  --accent-color: #141F24;
 }
 
 .dark .card {
@@ -44,8 +44,9 @@
 
 /* Colourful Theme */
 .colourful {
-  --primary-color: #ffba49;
-  --secondary-color: #20a39e; /* Update with a valid secondary color */
+  --primary-color: #01A5F3;
+  --secondary-color: #F301A5; 
+  --accent-color: #A5F301;
 }
 
 .colourful .card {
