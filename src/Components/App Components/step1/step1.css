@@ -18,8 +18,8 @@
 /* Input section styles */
 .input-section {
   width: 70%;
-  padding-left: 20px; /* Add spacing between intro text and input section */
-  border-left: 1px solid #ccc; /* Add a thin gray border on the left */
+  padding-left: 20px;
+  border-left: 1px solid #ccc;
 }
 
 /* Input field styles */
