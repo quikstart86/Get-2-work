@@ -80,6 +80,7 @@ function Index() {
     console.log(Options);
   }, [Options]);
 
+  // will be using this data for the final render 
   localStorage.setItem('userData', JSON.stringify(Options));
 
 

@@ -17,6 +17,8 @@ function Step3() {
     });
   };
 
+  localStorage.setItem("themeData", JSON.stringify(selectedTheme))
+
   return (
     <div className="container py-4 py-xl-5">
       <div className="row mb-5">

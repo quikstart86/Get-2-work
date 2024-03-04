@@ -1,0 +1,12 @@
+.light {
+  background-color: blue;
+}
+
+.dark {
+  background-color: grey;
+  font-size: 10rem;
+}
+
+.colourful {
+  background-color: orange;
+}
