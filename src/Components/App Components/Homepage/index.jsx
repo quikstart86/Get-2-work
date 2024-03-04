@@ -11,7 +11,7 @@ function Homepage() {
       <div className='homeContent'>
         <img src={Logo} alt="Get To Work logo" className="logo" />
         <div className='textAnimation'>
-          <p>Build an interactive, fully functioning, and customizable website in minutes.</p>
+          <p>Build an interactive, fully functioning, and customisable website in minutes.</p>
         </div>
         <div className='getStarted'>
           <div className="mb-2">

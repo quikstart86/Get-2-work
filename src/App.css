@@ -7,6 +7,10 @@ body {
   font-family: 'League Spartan', sans-serif !important;
 }
 
+.homeContent {
+  padding-top: 50px;
+}
+
 /* Video background */
 .video-bg {
   position: absolute;
@@ -15,30 +19,34 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* Ensure the video is behind other content */
+  z-index: -1;
 }
 
 /* Main content */
 .main-content {
-  position: relative; /* Ensure the main content sits on top of the video */
-  z-index: 1; /* Ensure the main content is above the video */
+  position: relative;
+  z-index: 1;
 }
 
 /* Define styles for Bootstrap buttons */
-body .btn-primary {
+body .btn-gtw {
   background-color: #d80202;
+  color: #fff;
   border: none;
+  outline: none;
 }
 
-body .btn-primary:hover {
+body .btn-gtw:hover {
   background-color: #bc0000;
+  color: #fff;
   border: none;
+  outline: none;
 }
 
 /* Footer Icon Styling */
 .footer-icon {
-  font-size: 24px; /* Adjust the size as needed */
-  color: #d80202; /* Set the color */
+  font-size: 24px;
+  color: #d80202;
   margin-right: 10px;
 }
 
