@@ -1,10 +1,13 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import * as bootstrap from 'bootstrap'
-// import Popper from 'popper.js';
+import Popper from 'popper.js';
+import { Dropdown, Button } from 'react-bootstrap';
+
 import { useState } from "react"
 import { useEffect } from 'react'
-import Dropdown from 'react-bootstrap/Dropdown';
+import './step2.css';
+
 import { IoCaretBackSharp } from "react-icons/io5";
 import { IoCaretForward } from "react-icons/io5";
 import { Link } from 'react-router-dom';
@@ -14,7 +17,7 @@ import Home from "../../User Components/Homepage/index"
 const AllChecked = ["CSS", "html", "Javascript"]
 
 
-function Index() {
+function Step2() {
 
   // I am using the this to set the state of the selected options as it always starts with frontEnd I set it to frontEnd
   const [selectedOption, setSelectedOption] = useState('frontEnd');
@@ -91,7 +94,7 @@ function Index() {
 
   return (
     <div className="step2-container">
-      <h2 className='text-center pt-3 p-4'>So, {firstName}, what kind of developer are you?</h2>
+      <h2 className='text-center pt-3 p-4'>So,  what kind of developer are you?</h2>
       <Dropdown className="text-center" select value={selectedOption} onChange={handleChange}>
         <Dropdown.Toggle variant="gtw" id="dropdown-basic">
           I am a...
@@ -150,6 +153,15 @@ function Index() {
             <input type="checkbox" ></input>
             <label>Node</label> <br />
           </div>)}
+      </div>
+
+      <div className='step2-container'>
+        <Link to={'/Step1'}>
+          <Button variant="gtw">Prev</Button>
+        </Link>
+        <Link to={'/Step3'}>
+          <Button variant="gtw">Next</Button>
+        </Link>
       </div>
     </div>
   )
