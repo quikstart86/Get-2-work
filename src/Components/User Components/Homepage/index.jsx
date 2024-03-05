@@ -11,10 +11,19 @@ function index({ }) {
 
 
   const Options = JSON.parse(localStorage.getItem("skillsData"));
-  console.log(Options)
+  const FirstName = localStorage.getItem("firstName")
+  const LastName = localStorage.getItem('lastName');
+  const Address = localStorage.getItem('address');
+  const Email = localStorage.getItem('email');
+  const Github = localStorage.getItem('github');
+  const Linkedin = localStorage.getItem('linkedin');
+
+
   return (
     < div >
       <h1>Skills</h1>
+      <div> Hi {FirstName} {LastName}</div>
+      <div>{Address} {Email} {Github} {Linkedin} </div>
 
       {/* Iam iterating over each element in the options object  checking if the otpion is checked and only if true then rendering the skill*/}
       {Options.map((option) =>
