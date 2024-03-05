@@ -34,6 +34,10 @@ function Step3() {
     });
   };
 
+  useEffect(() => {
+    handleThemeSelect("light");
+  }, []);
+
   localStorage.setItem("themeData", JSON.stringify(selectedTheme))
 
   return (

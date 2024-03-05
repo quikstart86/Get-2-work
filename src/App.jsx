@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Homepage from './Components/App Components/Homepage';
 import Step1 from './Components/App Components/step1/Index.jsx';
