@@ -30,23 +30,28 @@
 
 /* Card margin */
 .card-margin {
-  margin-left: 10px; /* Adjust as needed */
+  margin-left: 10px;
+  /* Adjust as needed */
 }
 
 /* Card hover effect */
 .card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
-  transform: translateY(-5px); /* Move the card slightly upwards on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add box shadow on hover */
+  transform: translateY(-5px);
+  /* Move the card slightly upwards on hover */
 }
 
 /* Selected card styling */
 .selected {
-  border: 3px solid red; /* Add red border to the selected card */
+  border: 3px solid red;
+  /* Add red border to the selected card */
 }
 
 /* Text alignment within cards */
 .card-text {
-  text-align: center; /* Center align text within cards */
+  text-align: center;
+  /* Center align text within cards */
 }
 
 /* Button styles */
@@ -56,18 +61,38 @@
 
 /* Apply the theme-specific styles */
 .light {
-  --primary-color: #427aa1;
-  --secondary-color: #ebf2fa;
-  --accent-color: #679436;
+  --primary-color: #5E7B9B;
+  --secondary-color: #B8EBE7;
+  --accent-color: #ECEBEB;
 }
 
+.light .card {
+  background-color: var(--secondary-color);
+  /* Apply secondary color as background */
+}
+
+/* Dark Theme */
 .dark {
-  --primary-color: #25455b;
-  --secondary-color: #4083cf;
-  --accent-color: #3a541e;
+  --primary-color: #2F7F9E;
+  --secondary-color: #4C595E;
+  --accent-color: #141F24;
 }
 
+.dark .card {
+  background-color: var(--primary-color);
+  /* Apply primary color as background */
+  color: white;
+  /* Set text color to white */
+}
+
+/* Colourful Theme */
 .colourful {
-  --primary-color: #ffba49;
-  --secondary-color: #20a39e; /* Update with a valid secondary color */
+  --primary-color: #01A5F3;
+  --secondary-color: #F301A5;
+  --accent-color: #A5F301;
+}
+
+.colourful .card {
+  background-color: var(--primary-color);
+  /* Apply primary color as background */
 }
