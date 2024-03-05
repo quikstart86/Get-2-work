@@ -10,6 +10,8 @@ import Step3 from './Components/App Components/step3/index.jsx';
 import Footer from './Components/App Components/Footer';
 import PortfolioBuilder from './Components/App Components/PortfolioBuilder';
 import Test from './Components/User Components/Homepage/index.jsx'
+import HTML from './Components/User Components/Test/index.jsx'
+
 
 function App() {
   return (
@@ -24,13 +26,13 @@ function App() {
           Your browser does not support the video tag.
         </video>
         <Routes>
+          <Route path="/gen" element={<HTML />} />
           <Route path="/" element={<Homepage />} />
           <Route path="/Step1" element={<Step1 />} />
           <Route path="/Step2" element={<Step2 />} />
           <Route path="/Step3" element={<Step3 />} />
           <Route path="/PortfolioBuilder" element={<PortfolioBuilder />} />
           <Route path="/test" element={<Test />} />
-
         </Routes>
       </Router>
       <Footer />

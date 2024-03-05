@@ -10,7 +10,7 @@ function index() {
   // console.log(localthem)
 
   return (
-    <div className={`${localtheme}-card`}>Render
+    <div >Render
       <Home />
     </div>
     // this will be ware upon the event of the render button on step3 all the components from the user components will be rendered
