@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import Navbar from './Components/App Components/Navbar';
@@ -13,28 +13,23 @@ import Test from './Components/User Components/Homepage/index.jsx'
 
 function App() {
   return (
-    <>
-
-      <Router>
-        {/* Conditionally render the navbar */}
-        <Navbar />
-        {/* Video background */}
-        <video autoPlay loop muted className="video-bg">
+    <Router>
+      <Navbar />
+       {/* Video background */}
+       <video autoPlay loop muted className="video-bg">
           <source src="./src/Images/Background-GP.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/Step1" element={<Step1 />} />
-          <Route path="/Step2" element={<Step2 />} />
-          <Route path="/Step3" element={<Step3 />} />
-          <Route path="/PortfolioBuilder" element={<PortfolioBuilder />} />
-          <Route path="/test" element={<Test />} />
-
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/Step1" element={<Step1 />} />
+        <Route path="/Step2" element={<Step2 />} />
+        <Route path="/Step3" element={<Step3 />} />
+        <Route path="/PortfolioBuilder" element={<PortfolioBuilder />} />
+        <Route path="/test" element={<Test />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 

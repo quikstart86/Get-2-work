@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap');
 
-.container-wrapper {
+.hero-container-wrapper {
   max-width: 750px;
   margin: 0 auto;
+  height: 100vh;
 }
 
 .textAnimation p {
@@ -10,8 +11,7 @@
   font-size: 1.5em;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 2.6s steps(1000, end);
-
+  animation: typing 1.25s steps(1000, end);
 }
 
 @keyframes typing {
@@ -24,10 +24,9 @@
 }
 
 .homeContent img {
-  max-width: 300px;
+  max-width: 500px;
   height: auto;
 }
-
 
 .getStarted button {
   float: right;
@@ -44,7 +43,6 @@
 .getStarted button:hover {
   background: #bc0000 !important;
   border-style: none !important;
-
 }
 
 body .btn-primary {
@@ -57,3 +55,177 @@ body .btn-primary:hover {
   border: none;
 }
 
+.scroll-icon {
+  font-size: 40px; /* Increase font size for larger arrow */
+  color: #d80202;
+  position: absolute;
+  bottom: 100px; /* Adjust this value to position the icon vertically */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrow {
+  font-size: 50px;
+  width: 40px;
+  height: 40px;
+  border: solid #bc0000;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  position: relative;
+  animation: arrowAnimation 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+
+/* About section */
+.about-section {
+  padding: 25px 0;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-family: "League Spartan", sans-serif;
+  color: #fff;
+  font-size: 2em;
+}
+
+.about-section p {
+  color: #fff;
+  font-size: 1.2em;
+  }
+
+.about-container {
+  position: relative;
+  max-width: 750px;
+}
+
+.about-container .divider {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-700%);
+  left: 37.5%; /* Adjust this value to center the divider */
+  width: 25%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.red-bg {
+  background-color: #d80202;
+}
+
+.text-white {
+  padding: 50px 0px;
+}
+/* Team section */
+.team-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-family: "League Spartan", sans-serif;
+  color: #000;
+  font-size: 2em;
+}
+
+.team-section .row {
+  justify-content: center;
+}
+
+.team-section .col-md-2 {
+  margin-bottom: 30px;
+}
+
+.team-section img {
+  max-width: 150px;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+/* Contact section */
+.contact-section {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-family: "League Spartan", sans-serif;
+  color: #fff;
+  font-size: 2em;
+}
+
+.contact-section form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.contact-section textarea {
+  resize: vertical;
+}
+
+.contact-section button {
+  background-color: #fff;
+  color: #d80202;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-section button:hover {
+  background-color: #d80202;
+  color: #fff;
+}
+
+.contact-section .divider {
+  position: relative; /* Change from absolute to relative */
+  margin: 0 auto; /* Center horizontally */
+  width: 25%;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+hr.solid {
+  border-top: 2px solid #fff;
+  width: 25%;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+hr.solid-red {
+  border-top: 2px solid #d80202;
+  padding: 25px 0px;
+  width: 25%;
+  margin: 0 auto;
+}
