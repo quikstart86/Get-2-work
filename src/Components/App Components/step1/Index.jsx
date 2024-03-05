@@ -9,6 +9,8 @@ import PlacesAutocomplete, {
   getLatLng,
 } from "react-places-autocomplete";
 import './step1.css';
+import Navbar from '../Navbar';
+import Footer from '../Footer';
 
 function Step1() {
   const [firstName, setFirstName] = useState('');
@@ -37,6 +39,8 @@ function Step1() {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="step1-container">
       <div className="intro-text">
         {/* Intro text */}
@@ -127,6 +131,8 @@ function Step1() {
         </Form>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 

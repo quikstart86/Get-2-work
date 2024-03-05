@@ -4,9 +4,13 @@ import { Link } from 'react-router-dom';
 import Logo from '/src/Images/G2W-Logo.png';
 import '../Homepage/home.css';
 import Button from 'react-bootstrap/Button';
+import Navbar from '../Navbar';
+import Footer from '../Footer';
 
 function Homepage() {
   return (
+    <>
+  <Navbar />
     <div className="container-wrapper">
       <div className='homeContent'>
         <img src={Logo} alt="Get To Work logo" className="logo" />
@@ -24,6 +28,8 @@ function Homepage() {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 
