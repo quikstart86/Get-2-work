@@ -7,10 +7,10 @@ import Home from '../../User Components/Homepage/index'
 function index() {
 
   const localtheme = JSON.parse(localStorage.getItem("themeData"));
-  console.log(localtheme)
+  // console.log(localthem)
 
   return (
-    <div className={localtheme}>Render
+    <div className={`${localtheme}-card`}>Render
       <Home />
     </div>
     // this will be ware upon the event of the render button on step3 all the components from the user components will be rendered
