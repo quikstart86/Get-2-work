@@ -1,12 +1,12 @@
-.light {
+.colourful-card {
   background-color: blue;
 }
 
-.dark {
+.light-card {
   background-color: grey;
   font-size: 10rem;
 }
 
-.colourful {
+.dark-card {
   background-color: orange;
 }
