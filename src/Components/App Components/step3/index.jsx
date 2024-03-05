@@ -82,20 +82,18 @@ function Step3() {
       </div>
       <div className="row mt-4">
         <div className="col text-center">
-          <Link to={{ pathname: "/PortfolioBuilder", state: { selectedTheme } }}>
-            <Button variant="gtw" disabled={!selectedTheme}>
-              Apply Theme
-            </Button>
-          </Link>
+
         </div>
       </div>
       <div className='button-container'>
         <Link to={'/Step2'}>
           <Button variant="gtw">Prev</Button>
         </Link>
-        <Link to={'/Step4'}>
-          <Button variant="gtw">Next</Button>
-        </Link>
+        <Link to={{ pathname: "/PortfolioBuilder", state: { selectedTheme } }}>
+            <Button variant="gtw" disabled={!selectedTheme}>
+              Finish
+            </Button>
+          </Link>
       </div>
     </div>
   );
