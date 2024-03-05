@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
@@ -10,8 +10,23 @@ import "./step3.css";
 function Step3() {
   const [selectedTheme, setSelectedTheme] = useState("");
 
+  useEffect(() => {
+    // Retrieve selected theme from local storage on component mount
+    const storedTheme = localStorage.getItem('selectedTheme');
+    if (storedTheme) {
+      setSelectedTheme(storedTheme);
+      applyTheme(storedTheme);
+    }
+  }, []);
+
   const handleThemeSelect = (theme) => {
     setSelectedTheme(theme);
+    applyTheme(theme);
+    // Store selected theme in local storage
+    localStorage.setItem('selectedTheme', theme);
+  };
+
+  const applyTheme = (theme) => {
     import(`./${theme}-theme.css`).then(() => {
       document.documentElement.className = theme;
     });
