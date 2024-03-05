@@ -6,6 +6,8 @@ import LightThemeImage from "/src/Images/light-theme.png";
 import DarkThemeImage from "/src/Images/dark-theme.png";
 import ColourfulThemeImage from "/src/Images/colourful-theme.png";
 import "./step3.css";
+import Navbar from '../Navbar';
+import Footer from '../Footer';
 
 function Step3() {
   const [selectedTheme, setSelectedTheme] = useState("");
@@ -39,6 +41,8 @@ function Step3() {
   localStorage.setItem("themeData", JSON.stringify(selectedTheme))
 
   return (
+    <>
+ <Navbar />
     <div className="step3-container py-4 py-xl-4">
       <div className="row mb-5">
         <div className="col-md-8 col-xl-8 text-center mx-auto">
@@ -101,7 +105,9 @@ function Step3() {
             </Button>
           </Link>
       </div>
-    </div>
+    </div>  
+    <Footer />
+  </>
   );
 }
 
