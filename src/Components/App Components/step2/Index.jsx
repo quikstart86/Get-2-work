@@ -12,6 +12,8 @@ import { IoCaretBackSharp } from "react-icons/io5";
 import { IoCaretForward } from "react-icons/io5";
 import { Link, json } from 'react-router-dom';
 import Home from "../../User Components/Homepage/index"
+import Navbar from '../Navbar';
+import Footer from '../Footer';
 
 //creating an array which I can hold all the checkbox options 
 const AllChecked = ["CSS", "html", "Javascript", "mySQL", "mongoDb", "Node"]
@@ -95,6 +97,8 @@ function Step2() {
 
 
   return (
+    <>
+   <Navbar />
     <div className="step2-container">
       <h2 className='text-center pt-3 p-4'>So {FirstName},  what kind of developer are you?</h2>
       <Dropdown className="text-center" select value={selectedOption} onChange={handleChange}>
@@ -166,6 +170,8 @@ function Step2() {
         </Link>
       </div>
     </div>
+    <Footer />
+    </>
   )
 }
 
