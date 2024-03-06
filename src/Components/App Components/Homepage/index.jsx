@@ -228,33 +228,14 @@ function Homepage() {
               </Link>
             </div>
           </div>
-          {/* Animated scrolling icon */}
 
         </div>
-      </div>
-      
-      {/* About section */}
-      <div className="about-section">
-        <div className="container about-container">
-          <h2 className="text-black">Are you ready to <i>Get To Work</i>?</h2>
-          <hr className="solid"></hr>
-          <h4 className="text-black">Having spent hours and hours setting up projects we thought, why don't we automate this to help the speed and also share it with the community.</h4>
-        </div>
-      </div>
-      
-      {/* Team section */}
-      <div className="team-section white-bg">
-        {/* Rest of your content */}
-      </div>
-      {/* Contact form */}
-      <div className="contact-section red-bg">
-        {/* Rest of your content */}
+        
       </div>
                     <div className="about-section">
                 <div className="container about-container">
                   <h2 className="text-black">Are you ready to <i>Get To Work</i>?</h2>
-                  <hr className="solid"></hr>
-                  <h4 className="text-white">Having spent hours and hours setting up projects we thought, why don't we automate this to help the speed and also share it with the community.</h4>
+                  <h4 className="text-black">Having spent hours and hours setting up projects we thought, why don't we automate this to help the speed and also share it with the community.</h4>
                 </div>
               </div>
               {/* Team section */}
@@ -290,9 +271,9 @@ function Homepage() {
                 </div>
               </div>
               {/* Contact form */}
-              <div className="contact-section red-bg">
+              <div className="contact-section">
                 <div className="container">
-                  <h2 className="text-white">Contact Us</h2>
+                  <h2 className="text-black">Contact Us</h2>
                   <hr className="solid"></hr>
                   <Form onSubmit={handleSubmit}>
                     <Form.Group controlId="formName">
@@ -329,7 +310,7 @@ function Homepage() {
                         required
                       />
                     </Form.Group>
-                    <Button variant="light" type="submit">
+                    <Button  type="submit">
                       Submit
                     </Button>
                   </Form>
