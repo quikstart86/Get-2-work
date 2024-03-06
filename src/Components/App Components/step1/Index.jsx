@@ -17,6 +17,7 @@ function Step1() {
   const [lastName, setLastName] = useState('');
   const [address, setAddress] = useState('');
   const [email, setEmail] = useState('');
+  const [bio, setBio] = useState('');
   const [github, setGithub] = useState('');
   const [linkedin, setLinkedin] = useState('');
 
@@ -35,103 +36,104 @@ function Step1() {
     localStorage.setItem('email', email);
     localStorage.setItem('github', github);
     localStorage.setItem('linkedin', linkedin);
+    localStorage.setItem('Bio', bio);
     // Handle next logic
   };
 
   return (
     <>
-    <Navbar />
-    <div className="step1-container">
-      <div className="intro-text">
-        {/* Intro text */}
-        <h2>Hi there!</h2>
-        <p>Let's get to know each other. Please provide a few pieces of info about yourself, and how you'd like all your new clients to get in touch with you.</p>
-      </div>
-      <div className="input-section">
-        <Form>
-          {/* First Name */}
-          <Form.Group controlId="formFirstName">
-            <Form.Label>First Name:</Form.Label>
-            <Form.Control type="text" placeholder="Enter your first name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
-          </Form.Group>
+      <Navbar />
+      <div className="step1-container">
+        <div className="intro-text">
+          {/* Intro text */}
+          <h2>Hi there!</h2>
+          <p>Let's get to know each other. Please provide a few pieces of info about yourself, and how you'd like all your new clients to get in touch with you.</p>
+        </div>
+        <div className="input-section">
+          <Form>
+            {/* First Name */}
+            <Form.Group controlId="formFirstName">
+              <Form.Label>First Name:</Form.Label>
+              <Form.Control type="text" placeholder="Enter your first name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+            </Form.Group>
 
-          {/* Last Name */}
-          <Form.Group controlId="formLastName">
-            <Form.Label>Last Name:</Form.Label>
-            <Form.Control type="text" placeholder="Enter your last name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
-          </Form.Group>
+            {/* Last Name */}
+            <Form.Group controlId="formLastName">
+              <Form.Label>Last Name:</Form.Label>
+              <Form.Control type="text" placeholder="Enter your last name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
+            </Form.Group>
 
-          {/* Location */}
-          <Form.Group controlId="formLocation">
-            <Form.Label>Location:</Form.Label>
-            <PlacesAutocomplete
-              value={address}
-              onChange={setAddress}
-              onSelect={handleSelect}
-            >
-              {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
-                <div>
-                  <Form.Control
-                    {...getInputProps({
-                      placeholder: 'Enter your location',
-                    })}
-                  />
-                  <div className="autocomplete-dropdown-container">
-                    {loading && <div className="step1-loading">Loading...</div>}
-                    {suggestions.map((suggestion, index) => (
-                      <div
-                        key={index}
-                        {...getSuggestionItemProps(suggestion)}
-                      >
-                        <span>{suggestion.description}</span>
-                      </div>
-                    ))}
+            {/* Location */}
+            <Form.Group controlId="formLocation">
+              <Form.Label>Location:</Form.Label>
+              <PlacesAutocomplete
+                value={address}
+                onChange={setAddress}
+                onSelect={handleSelect}
+              >
+                {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+                  <div>
+                    <Form.Control
+                      {...getInputProps({
+                        placeholder: 'Enter your location',
+                      })}
+                    />
+                    <div className="autocomplete-dropdown-container">
+                      {loading && <div className="step1-loading">Loading...</div>}
+                      {suggestions.map((suggestion, index) => (
+                        <div
+                          key={index}
+                          {...getSuggestionItemProps(suggestion)}
+                        >
+                          <span>{suggestion.description}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              )}
-            </PlacesAutocomplete>
-          </Form.Group>
+                )}
+              </PlacesAutocomplete>
+            </Form.Group>
 
-          {/* Bio */}
-          <Form.Group controlId="formBio">
-            <Form.Label>Short Bio:</Form.Label>
-            <Form.Control as="textarea" rows={4} placeholder="Enter a short bio (max 30 words)" maxLength={150} />
-          </Form.Group>
+            {/* Bio */}
+            <Form.Group controlId="formBio">
+              <Form.Label>Short Bio:</Form.Label>
+              <Form.Control as="textarea" rows={4} placeholder="Enter a short bio (max 30 words)" maxLength={150} value={bio} onChange={(e) => setBio(e.target.value)} />
+            </Form.Group>
 
-          {/* Email Address */}
-          <Form.Group controlId="formEmail">
-            <InputGroup className="input-group">
-              <HiOutlineMail className="input-icon" />
-              <Form.Control type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} />
-            </InputGroup>
-          </Form.Group>
+            {/* Email Address */}
+            <Form.Group controlId="formEmail">
+              <InputGroup className="input-group">
+                <HiOutlineMail className="input-icon" />
+                <Form.Control type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} />
+              </InputGroup>
+            </Form.Group>
 
-          {/* GitHub Username */}
-          <Form.Group controlId="formGithub">
-            <InputGroup className="input-group">
-              <AiOutlineGithub className="input-icon" />
-              <Form.Control type="text" placeholder="Github username" value={github} onChange={(e) => setGithub(e.target.value)} />
-            </InputGroup>
-          </Form.Group>
+            {/* GitHub Username */}
+            <Form.Group controlId="formGithub">
+              <InputGroup className="input-group">
+                <AiOutlineGithub className="input-icon" />
+                <Form.Control type="text" placeholder="Github username" value={github} onChange={(e) => setGithub(e.target.value)} />
+              </InputGroup>
+            </Form.Group>
 
-          {/* LinkedIn Profile */}
-          <Form.Group controlId="formLinkedin">
-            <InputGroup className="input-group">
-              <FaLinkedin className="input-icon" />
-              <Form.Control type="text" placeholder="LinkedIn profile URL" value={linkedin} onChange={(e) => setLinkedin(e.target.value)} />
-            </InputGroup>
-          </Form.Group>
+            {/* LinkedIn Profile */}
+            <Form.Group controlId="formLinkedin">
+              <InputGroup className="input-group">
+                <FaLinkedin className="input-icon" />
+                <Form.Control type="text" placeholder="LinkedIn profile URL" value={linkedin} onChange={(e) => setLinkedin(e.target.value)} />
+              </InputGroup>
+            </Form.Group>
 
-          {/* Next Button */}
-          <div className="button-container">
-            <Link to="/step2">
-              <Button variant="gtw" onClick={handleNext}>Next</Button>
-            </Link>
-          </div>
-        </Form>
+            {/* Next Button */}
+            <div className="button-container">
+              <Link to="/step2">
+                <Button variant="gtw" onClick={handleNext}>Next</Button>
+              </Link>
+            </div>
+          </Form>
+        </div>
       </div>
-    </div>
-    <Footer />
+      <Footer />
     </>
   );
 }
