@@ -12,6 +12,7 @@
   overflow: hidden;
   white-space: nowrap;
   animation: typing 1.25s steps(1000, end);
+  padding-left: 10px;
 }
 
 @keyframes typing {
@@ -32,21 +33,38 @@ padding-top: none !important;
   height: auto;
 }
 
-.getStarted button {
-  float: right;
-  width: 25%;
-  height: 50px !important;
+/* .getStarted button {
+  width: auto;
+  height: auto;
   font-family: "League Spartan" !important;
-  font-size: 1.2em !important;
+  font-size: 1.5em !important;
+  border-radius: 40px !important;
+  background-color: #d80202 !important;
+  transition: background-color 0.8s ease, color 0.8s ease;
+  border-style: none !important;
+} */
+
+.getStarted {
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.getStarted button {
+  width: auto;
+  height: auto;
+  font-family: "League Spartan" !important;
+  font-size: 1.5em !important;
   border-radius: 40px !important;
   background-color: #d80202 !important;
   transition: background-color 0.8s ease, color 0.8s ease;
   border-style: none !important;
 }
 
+
 .getStarted button:hover {
-  background: #bc0000 !important;
+  background: none !important;
   border-style: none !important;
+  color: #000;
 }
 
 body .btn-primary {
@@ -99,19 +117,17 @@ body .btn-primary:hover {
 
 /* About section */
 .about-section {
-  padding: 25px 0;
   text-align: center;
 }
 
 .about-section h2 {
-  font-family: "League Spartan", sans-serif;
-  color: #fff;
+  font-family: "League Spartan", sans-serif !important;
   font-size: 2em;
 }
 
 .about-section p {
-  color: #fff;
   font-size: 1.2em;
+  font-family: "League Spartan", sans-serif !important;
   }
 
 .about-container {
@@ -119,15 +135,15 @@ body .btn-primary:hover {
   max-width: 750px;
 }
 
-.about-container .divider {
+/* .about-container .divider {
   position: absolute;
   top: 50%;
   transform: translateY(-700%);
   left: 37.5%; /* Adjust this value to center the divider */
-  width: 25%;
+  /* width: 25%;
   height: 2px;
   background-color: #ffffff;
-}
+} */ 
 
 /* .red-bg {
   background-color: #d80202;
@@ -158,10 +174,6 @@ body .btn-primary:hover {
 
 .team-section img {
   max-width: 150px;
-}
-
-.white-bg {
-  background-color: #fff;
 }
 
 /* Contact section */
@@ -233,3 +245,33 @@ hr.solid-red {
   width: 25%;
   margin: 0 auto;
 }
+
+.gtw-text-black .about-container, h4 {
+font-family: "League Spartan", sans-serif !important;
+font-weight: lighter !important;
+}
+
+.gtw-text-black .contact-section, h2 {
+  font-family: "League Spartan", sans-serif !important;
+  font-weight: lighter !important;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .textAnimation p {
+      font-size: 1.4em;
+    }
+
+    .scroll-icon {
+      font-size: 50px;
+      color: #d80202;
+      position: absolute;
+      bottom: 10px; 
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .getStarted button {
+      margin-left: 10px;
+    }
+    
+  }
