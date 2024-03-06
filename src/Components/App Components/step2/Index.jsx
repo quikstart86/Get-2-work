@@ -22,7 +22,7 @@ const AllChecked = ["CSS", "html", "Javascript", "mySQL", "mongoDb", "Node"]
 function Step2() {
 
   // I am using the this to set the state of the selected options as it always starts with frontEnd I set it to frontEnd
-  const [selectedOption, setSelectedOption] = useState('Front-End');
+  const [selectedOption, setSelectedOption] = useState('');
 
   //Creating Options array object to hold the checked items
   const [Options, setOptions] = useState([{}])
@@ -113,7 +113,11 @@ function Step2() {
           </Dropdown.Menu>
         </Dropdown>
 
-        <h2 className='gtw-text-center mt-5 p-5'>What skills do you have ?</h2>
+        {selectedOption !== '' && (
+          <h2 className='gtw-text-center mt-5 p-5' >What skills do you have ?</h2>
+        )}
+
+
 
         {/* here I am giving the child component data thorugh props specifically I am giving it the Options array object */}
         {/* <Home Options={Options} /> */}
