@@ -6,15 +6,15 @@
 }
 
 .light-card {
-  background-color: #5E7B9B;
+  background-color: #B8EBE7;
 }
 
 .light-hovercard {
-  background-color:#2F7F9E;
+  background-color:#5E7B9B;
 }
 
 .light-portfolio {
-  background-color: #5E7B9B;
+  background-color: #B8EBE7;
 
 }
 
@@ -46,21 +46,21 @@
 /* Colourful theme */
 
 .colourful-nav {
-  background-color: white;
+  background-color: #03B5AA;
 }
 
 /*Colors for Main sections */
 .colourful-card {
-  background-color: white;
+  background-color: #F7A278EF;
 
 }
 
 .colourful-hovercard {
-  background-color:#2F7F9E;
+  background-color:#03B5AA;
 }
 
 
 /*Color for Portfolio and Contact Sections*/
 .colourful-portfolio {
-  background-color: red;
+  background-color: #F7A278EF;
 }
