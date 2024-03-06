@@ -8,7 +8,6 @@ function index() {
 
   const localtheme = JSON.parse(localStorage.getItem("themeData"));
   // console.log(localthem)
-
   return (
     <div >Render
       <Home />

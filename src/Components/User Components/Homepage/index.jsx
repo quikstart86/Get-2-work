@@ -53,7 +53,7 @@ function index({ }) {
           <link href="css/styles.css" rel="stylesheet" />
         </head>
         <body id="page-top">
-          <nav className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+          <nav className={`${localtheme}-nav navbar navbar-expand-lg text-uppercase fixed-top`} id="mainNav">
             <div className="container">
               <a className="navbar-brand" href="#page-top">{FirstName} {LastName}</a>
               <button className="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +69,7 @@ function index({ }) {
               </div>
             </div>
           </nav>
-          <header className="masthead bg-primary text-white text-center">
+          <header className={`${localtheme}-card masthead  text-white text-center `} >
             <div className="container d-flex align-items-center flex-column">
               {/* Your Photo/Image Goes here - Change the dummy image below with your own photo */}
               <img className="img-fluid rounded-circle m-5" src="https://dummyimage.com/200x200/6c757d/dee2e6.jpg" alt="..." />
@@ -80,7 +80,7 @@ function index({ }) {
             </div>
           </header>
 
-          <section className="page-section bg-primary text-white mb-0" id="about">
+          <section className={`${localtheme}-card page-section text-white mb-0 `} id="about">
             <div className="container">
               {/* About Section Heading*/}
               <h2 className="page-section-heading text-center text-uppercase text-white mb-5">About</h2>
@@ -94,7 +94,7 @@ function index({ }) {
           </section>
 
 
-          <section className="bg-primary text-white mb-4" id="skills">
+          <section className={`${localtheme}-card text-white `} id="skills">
             <div className="container">
               {/* Skills Section Heading*/}
               <h2 className="page-section-heading text-center text-uppercase text-white mb-5">Skills</h2>
@@ -114,7 +114,7 @@ function index({ }) {
               </div>
             </div>
           </section>
-          <section className="page-section portfolio" id="portfolio">
+          <section className={`${localtheme}-portfolio page-section portfolio`} id="portfolio">
             <div className="container">
               {/* Portfolio Section Heading*/}
               <h2 className="page-section-heading text-center text-uppercase text-secondary mb-5">Portfolio</h2>
@@ -151,7 +151,7 @@ function index({ }) {
               </div>
             </div>
           </section>
-          <section className="page-section" id="contact">
+          <section className={`${localtheme}-portfolio page-section`} id="contact">
             <div className="container">
               {/* Contact Section Heading*/}
               <h2 className="page-section-heading text-center text-uppercase text-secondary mb-5">Contact Me</h2>
@@ -207,7 +207,7 @@ function index({ }) {
               </div>
             </div>
           </section>
-          <footer className="footer">
+          <footer className={`${localtheme}-nav footer `}>
             <div className="container">
               <div className="row justify-content-center">
                 {/* Footer Social Icons*/}
