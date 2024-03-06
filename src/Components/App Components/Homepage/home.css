@@ -67,6 +67,16 @@ padding-top: none !important;
   color: #000;
 }
 
+.team-section {
+  max-width: 950px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 8px;
+  display: flex;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
 body .btn-primary {
   background-color: #d80202;
   border: none;
@@ -275,3 +285,58 @@ font-weight: lighter !important;
     }
     
   }
+
+  @media screen and (max-width: 500px) {
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-container-wrapper {
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.homeContent img {
+  max-width: 100%;
+  height: auto;
+}
+
+.getStarted {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.getStarted button {
+  margin-left: 0; 
+}
+
+.team-section {
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.team-section .col-md-2 {
+  flex: 0 0 calc(50% - 20px); 
+  margin: 0 10px;
+  margin-bottom: 30px;
+}
+
+.team-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.contact-section form {
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+  } 
