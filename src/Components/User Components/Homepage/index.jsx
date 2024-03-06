@@ -56,20 +56,20 @@ function index({ }) {
           <nav className={`${localtheme}-nav navbar navbar-expand-lg text-uppercase fixed-top`} id="mainNav">
             <div className="container">
               <a className="navbar-brand" href="#page-top">{FirstName} {LastName}</a>
-              <button className="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <button className="navbar-toggler text-uppercase font-weight-bold bg-primary  rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <i className="fas fa-bars"></i>
               </button>
               <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav ms-auto">
-                  <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                  <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="#skills">Skills</a></li>
-                  <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                  <li className="nav-item mx-0 mx-lg-1"><a className="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                  <li className="nav-item mx-0 mx-lg-1"><a className={`${localtheme}-hovernav nav-link py-3 px-0 px-lg-3 rounded`} href="#about">About</a></li>
+                  <li className="nav-item mx-0 mx-lg-1"><a className={`${localtheme}-hovernav nav-link py-3 px-0 px-lg-3 rounded`}  href="#skills">Skills</a></li>
+                  <li className="nav-item mx-0 mx-lg-1"><a className={`${localtheme}-hovernav nav-link py-3 px-0 px-lg-3 rounded`}  href="#portfolio">Portfolio</a></li>
+                  <li className="nav-item mx-0 mx-lg-1"><a className={`${localtheme}-hovernav nav-link py-3 px-0 px-lg-3 rounded`} href="#contact">Contact</a></li>
                 </ul>
               </div>
             </div>
           </nav>
-          <header className={`${localtheme}-card masthead  text-white text-center `} >
+          <header className={`${localtheme}-card masthead   text-center `} >
             <div className="container d-flex align-items-center flex-column">
               {/* Your Photo/Image Goes here - Change the dummy image below with your own photo */}
               <img className="img-fluid rounded-circle m-5" src="https://dummyimage.com/200x200/6c757d/dee2e6.jpg" alt="..." />
@@ -80,10 +80,10 @@ function index({ }) {
             </div>
           </header>
 
-          <section className={`${localtheme}-card page-section text-white mb-0 `} id="about">
+          <section className={`${localtheme}-card page-section  mb-0 `} id="about">
             <div className="container">
               {/* About Section Heading*/}
-              <h2 className="page-section-heading text-center text-uppercase text-white mb-5">About</h2>
+              <h2 className="page-section-heading text-center text-uppercase  mb-5">About</h2>
 
               {/* About Section Content*/}
               <div className="row">
@@ -94,10 +94,10 @@ function index({ }) {
           </section>
 
 
-          <section className={`${localtheme}-card text-white `} id="skills">
+          <section className={`${localtheme}-card  `} id="skills">
             <div className="container">
               {/* Skills Section Heading*/}
-              <h2 className="page-section-heading text-center text-uppercase text-white mb-5">Skills</h2>
+              <h2 className="page-section-heading text-center text-uppercase  mb-5">Skills</h2>
 
               {/* Skills Section Content*/}
               <div className="row">
@@ -117,15 +117,15 @@ function index({ }) {
           <section className={`${localtheme}-portfolio page-section portfolio`} id="portfolio">
             <div className="container">
               {/* Portfolio Section Heading*/}
-              <h2 className="page-section-heading text-center text-uppercase text-secondary mb-5">Portfolio</h2>
+              <h2 className={`portfolio-item-caption-content text-center text-uppercase  ${localtheme}-text`}>Portfolio</h2>
 
               {/* Portfolio Grid Items*/}
               <div className="row justify-content-center">
                 {/* Portfolio Item 1*/}
                 <div className="col-md-6 col-lg-4 mb-5">
                   <div className="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                    <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                      <div className="portfolio-item-caption-content text-center text-white"><i className="fas fa-plus fa-3x"></i></div>
+                    <div className={`${localtheme}-hovercard portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100`}>
+                      <div className="portfolio-item-caption-content text-center "><i className="bi bi-zoom-in"></i></div>
                     </div>
                     <img className="img-fluid" src="src\Assets\placeholder-image.png" alt="..." />
                   </div>
@@ -133,17 +133,17 @@ function index({ }) {
                 {/* Portfolio Item 2*/}
                 <div className="col-md-6 col-lg-4 mb-5">
                   <div className="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                    <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                      <div className="portfolio-item-caption-content text-center text-white"><i className="fas fa-plus fa-3x"></i></div>
+                    <div className={`${localtheme}-hovercard portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100`}>
+                      <div className="portfolio-item-caption-content text-center "><i className="bi bi-zoom-in"></i></div>
                     </div>
                     <img className="img-fluid" src="src\Assets\placeholder-image.png" alt="..." />
                   </div>
                 </div>
                 {/* Portfolio Item 3*/}
-                <div className="col-md-6 col-lg-4 mb-5">
+                <div className={` col-md-6 col-lg-4 mb-5`} >
                   <div className="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                    <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                      <div className="portfolio-item-caption-content text-center text-white"><i className="fas fa-plus fa-3x"></i></div>
+                    <div className={`${localtheme}-hovercard portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100`} >
+                      <div className="portfolio-item-caption-content text-center "><i className="bi bi-zoom-in"></i></div>
                     </div>
                     <img className="img-fluid" src="src\Assets\placeholder-image.png" alt="..." />
                   </div>
@@ -154,7 +154,7 @@ function index({ }) {
           <section className={`${localtheme}-portfolio page-section`} id="contact">
             <div className="container">
               {/* Contact Section Heading*/}
-              <h2 className="page-section-heading text-center text-uppercase text-secondary mb-5">Contact Me</h2>
+              <h2 className={`page-section-heading text-center text-uppercase  text-secondary mb-5 ${localtheme}-text`}>Contact Me</h2>
               {/* Contact Section Form*/}
               <div className="row justify-content-center">
                 <div className="col-lg-8 col-xl-7">
@@ -221,7 +221,7 @@ function index({ }) {
               </div>
             </div>
           </footer>
-          <div className="copyright py-4 text-center text-white">
+          <div className={`${localtheme}-nav copyright py-4 text-center `}>
             <div className="container"><small>Copyright &copy; Your Website 2024</small></div>
           </div>
 
