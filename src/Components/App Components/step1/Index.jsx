@@ -13,6 +13,7 @@ import Navbar from '../Navbar';
 import Footer from '../Footer';
 
 function Step1() {
+  const [profileImage, setProfileImage] = useState(null);
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [address, setAddress] = useState('');
@@ -28,8 +29,13 @@ function Step1() {
     console.log('Lat lng:', latLng);
   };
 
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    setProfileImage(file);
+  };
+
   const handleNext = () => {
-    // Store the user's information in local storage
+    localStorage.setItem('profileImage', profileImage);
     localStorage.setItem('firstName', firstName);
     localStorage.setItem('lastName', lastName);
     localStorage.setItem('address', address);
@@ -51,78 +57,87 @@ function Step1() {
         </div>
         <div className="input-section">
           <Form>
-            {/* First Name */}
-            <Form.Group controlId="formFirstName">
-              <Form.Label>First Name:</Form.Label>
-              <Form.Control type="text" placeholder="Enter your first name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
-            </Form.Group>
+            <div className="left-column">
+              {/* Profile Photo */}
+              <Form.Group controlId="formProfilePhoto">
+                <Form.Label>Profile Photo:</Form.Label>
+                <Form.Control type="file" onChange={handleFileChange} accept="image/*" />
+              </Form.Group>
+            </div>
+            <div className="right-column">
+              {/* First Name */}
+              <Form.Group controlId="formFirstName">
+                <Form.Label>First Name:</Form.Label>
+                <Form.Control type="text" placeholder="Enter your first name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+              </Form.Group>
 
-            {/* Last Name */}
-            <Form.Group controlId="formLastName">
-              <Form.Label>Last Name:</Form.Label>
-              <Form.Control type="text" placeholder="Enter your last name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
-            </Form.Group>
+              {/* Last Name */}
+              <Form.Group controlId="formLastName">
+                <Form.Label>Last Name:</Form.Label>
+                <Form.Control type="text" placeholder="Enter your last name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
+              </Form.Group>
 
-            {/* Location */}
-            <Form.Group controlId="formLocation">
-              <Form.Label>Location:</Form.Label>
-              <PlacesAutocomplete
-                value={address}
-                onChange={setAddress}
-                onSelect={handleSelect}
-              >
-                {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
-                  <div>
-                    <Form.Control
-                      {...getInputProps({
-                        placeholder: 'Enter your location',
-                      })}
-                    />
-                    <div className="autocomplete-dropdown-container">
-                      {loading && <div className="step1-loading">Loading...</div>}
-                      {suggestions.map((suggestion, index) => (
-                        <div
-                          key={index}
-                          {...getSuggestionItemProps(suggestion)}
-                        >
-                          <span>{suggestion.description}</span>
-                        </div>
-                      ))}
+              {/* Location */}
+              <Form.Group controlId="formLocation">
+                <Form.Label>Location:</Form.Label>
+                <PlacesAutocomplete
+                  value={address}
+                  onChange={setAddress}
+                  onSelect={handleSelect}
+                >
+                  {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+                    <div>
+                      <Form.Control
+                        {...getInputProps({
+                          placeholder: 'Enter your location',
+                        })}
+                      />
+                      <div className="autocomplete-dropdown-container">
+                        {loading && <div className="step1-loading">Loading...</div>}
+                        {suggestions.map((suggestion, index) => (
+                          <div
+                            key={index}
+                            {...getSuggestionItemProps(suggestion)}
+                          >
+                            <span>{suggestion.description}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                )}
-              </PlacesAutocomplete>
-            </Form.Group>
+                  )}
+                </PlacesAutocomplete>
+              </Form.Group>
 
-            {/* Bio */}
-            <Form.Group controlId="formBio">
-              <Form.Label>Short Bio:</Form.Label>
-              <Form.Control as="textarea" rows={4} placeholder="Enter a short bio (max 30 words)" maxLength={150} value={bio} onChange={(e) => setBio(e.target.value)} />
-            </Form.Group>
+              {/* Bio */}
+              <Form.Group controlId="formBio">
+                <Form.Label>Short Bio:</Form.Label>
+                <Form.Control as="textarea" rows={4} placeholder="Enter a short bio (max 30 words)" maxLength={150} value={bio} onChange={(e) => setBio(e.target.value)} />
+              </Form.Group>
 
-            {/* Email Address */}
-            <Form.Group controlId="formEmail">
-              <InputGroup className="input-group">
-                <HiOutlineMail className="input-icon" />
-                <Form.Control type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} />
-              </InputGroup>
-            </Form.Group>
+              {/* Email Address */}
+              <Form.Group controlId="formEmail">
+                <InputGroup className="input-group">
+                  <HiOutlineMail className="input-icon" />
+                  <Form.Control type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} />
+                </InputGroup>
+              </Form.Group>
 
-            {/* GitHub Username */}
-            <Form.Group controlId="formGithub">
-              <InputGroup className="input-group">
-                <AiOutlineGithub className="input-icon" />
-                <Form.Control type="text" placeholder="Github username" value={github} onChange={(e) => setGithub(e.target.value)} />
-              </InputGroup>
-            </Form.Group>
+              {/* GitHub Username */}
+              <Form.Group controlId="formGithub">
+                <InputGroup className="input-group">
+                  <AiOutlineGithub className="input-icon" />
+                  <Form.Control type="text" placeholder="Github username" value={github} onChange={(e) => setGithub(e.target.value)} />
+                </InputGroup>
+              </Form.Group>
 
-            {/* LinkedIn Profile */}
-            <Form.Group controlId="formLinkedin">
-              <InputGroup className="input-group">
-                <FaLinkedin className="input-icon" />
-                <Form.Control type="text" placeholder="LinkedIn profile URL" value={linkedin} onChange={(e) => setLinkedin(e.target.value)} />
-              </InputGroup>
-            </Form.Group>
+              {/* LinkedIn Profile */}
+              <Form.Group controlId="formLinkedin">
+                <InputGroup className="input-group">
+                  <FaLinkedin className="input-icon" />
+                  <Form.Control type="text" placeholder="LinkedIn profile URL" value={linkedin} onChange={(e) => setLinkedin(e.target.value)} />
+                </InputGroup>
+              </Form.Group>
+            </div>
 
             {/* Next Button */}
             <div className="button-container">

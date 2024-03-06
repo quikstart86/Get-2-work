@@ -93,3 +93,24 @@
   width: 3em;
   height: 3em;
 }
+
+.left-column {
+  width: 100%;
+}
+
+.right-column {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .left-column {
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+  }
+
+  .right-column {
+    width: 60%;
+    float: left;
+  }
+}
