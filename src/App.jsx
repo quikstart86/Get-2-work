@@ -15,10 +15,12 @@ function App() {
     <>
       <Router>
         {/* Video background */}
-        <video autoPlay loop muted className="video-bg">
-          <source src="./src/Images/Background-GP.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div className="video-bg">
+          <video autoPlay loop muted className="video-bg" key="video-bg">
+            <source src="./src/Images/Background-GP.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <Routes>
 
           <Route path="/" element={<Homepage />} />
