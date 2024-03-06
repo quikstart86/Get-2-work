@@ -239,7 +239,7 @@ function Homepage() {
                 </div>
               </div>
               {/* Team section */}
-              <div className="team-section white-bg">
+              <div className="team-section">
                 <div className="container">
                   <h2 className="text-center">Our Team</h2>
                   <hr className="solid-red"></hr>
