@@ -219,8 +219,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #1abc9c;
-  --bs-link-hover-color: #15967d;
+  --bs-link-color: #2F7F9E;
+  --bs-link-hover-color: #2F7F9E;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -12849,7 +12849,7 @@ html {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  color: #B8EBE7;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active,
@@ -12858,7 +12858,7 @@ html {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
+  color: #B8EBE7;
 }
 
 #mainNav .navbar-toggler {
@@ -12981,7 +12981,7 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
