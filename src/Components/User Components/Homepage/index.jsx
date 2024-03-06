@@ -13,10 +13,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 //Here I am taking in Options as data for my prop
 function index({ }) {
 
-  // const location = useLocation();
-  // const Options = location.state?.Options || [];
-  // console.log("Location state:", location.state);
-  // console.log("Options received:", Options); 
+
   const localtheme = JSON.parse(localStorage.getItem("themeData"));
   const Dev = JSON.parse(localStorage.getItem('devType'))
   const Options = JSON.parse(localStorage.getItem("skillsData"));
@@ -26,28 +23,19 @@ function index({ }) {
   const Email = localStorage.getItem('email');
   const Github = localStorage.getItem('github');
   const Linkedin = localStorage.getItem('linkedin');
-
+  const Bio = localStorage.getItem('Bio')
 
   return (
     < div >
-      {/* <h1>Skills</h1>
-      <div> Hi I am {FirstName} {LastName}, a {Dev} developer</div>
-      <div>{Address} {Email} {Github} {Linkedin} </div> */}
+
 
       {/* Iam iterating over each element in the options object  checking if the otpion is checked and only if true then rendering the skill*/}
       {/* {Options.map((option) =>
         option.checked &&
-        <div className="container overflow-hidden">
-          <div className="row justify-content-xl-center gy-3 gy-sm-4">
-            <div className="col-12 col-sm-6 col-xl-5">
-              <div className="bg-white rounded shadow-sm  p-3 mb-3">
-                <div key={option.title} className={`${localtheme}-card`}>
-                  <h2> {option.title}</h2>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div key={option.title} className={`${localtheme}-card`}>
+          <h2> {option.title}</h2>
         </div>
+
       )
       } */}
 
@@ -65,9 +53,9 @@ function index({ }) {
           <link href="css/styles.css" rel="stylesheet" />
         </head>
         <body id="page-top">
-          <nav className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+          <nav className={`${localtheme}-nav navbar navbar-expand-lg text-uppercase fixed-top`} id="mainNav">
             <div className="container">
-              <a className="navbar-brand" href="#page-top">Your Name Goes Here</a>
+              <a className="navbar-brand" href="#page-top">{FirstName} {LastName}</a>
               <button className="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <i className="fas fa-bars"></i>
               </button>
@@ -81,43 +69,52 @@ function index({ }) {
               </div>
             </div>
           </nav>
-          <header className="masthead bg-primary text-white text-center">
+          <header className={`${localtheme}-card masthead  text-white text-center `} >
             <div className="container d-flex align-items-center flex-column">
               {/* Your Photo/Image Goes here - Change the dummy image below with your own photo */}
               <img className="img-fluid rounded-circle m-5" src="https://dummyimage.com/200x200/6c757d/dee2e6.jpg" alt="..." />
               {/* Masthead Heading*/}
-              <h1 className="masthead-heading text-uppercase mb-4">Your name/company</h1>
+              <h1 className="masthead-heading text-uppercase mb-4">{FirstName}</h1>
               {/* Masthead Subheading*/}
-              <h3 className="masthead-subheading font-weight-light m-4">- Your job title goes here -</h3>
+              <h3 className="masthead-subheading font-weight-light m-4">{Dev}</h3>
             </div>
           </header>
 
-          <section className="page-section bg-primary text-white mb-0" id="about">
+          <section className={`${localtheme}-card page-section text-white mb-0 `} id="about">
             <div className="container">
               {/* About Section Heading*/}
               <h2 className="page-section-heading text-center text-uppercase text-white mb-5">About</h2>
 
               {/* About Section Content*/}
               <div className="row">
-                <div className="col-lg-4 ms-auto"><p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ab omnis deserunt libero porro repellendus voluptatibus consequatur nisi quaerat, quos, aspernatur nobis autem beatae, officiis quae accusantium culpa accusamus cum?</p></div>
+                <div className="col-lg-4 ms-auto"><p className="lead">{Bio} lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eveniet reprehenderit qui? Architecto, nostrum id sunt ducimus dolorem ea, iste fugiat temporibus ratione</p></div>
                 <div className="col-lg-4 me-auto"><p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eveniet reprehenderit qui? Architecto, nostrum id sunt ducimus dolorem ea, iste fugiat temporibus ratione veritatis veniam itaque corrupti aut quod possimus!</p></div>
               </div>
             </div>
           </section>
 
 
-          <section className="bg-primary text-white mb-4" id="skills">
+          <section className={`${localtheme}-card text-white `} id="skills">
             <div className="container">
               {/* Skills Section Heading*/}
               <h2 className="page-section-heading text-center text-uppercase text-white mb-5">Skills</h2>
 
               {/* Skills Section Content*/}
               <div className="row">
-                <div className="col-lg ms-auto mx-auto text-center"><p className="lead">Skills Go Here</p></div>
+                <div className="col-lg ms-auto mx-auto text-center">
+                  {Options.map((option) =>
+                    option.checked &&
+                    <div key={option.title} className={`${localtheme}-card`}>
+                      <h2> {option.title}</h2>
+                    </div>
+
+                  )
+                  }
+                </div>
               </div>
             </div>
           </section>
-          <section className="page-section portfolio" id="portfolio">
+          <section className={`${localtheme}-portfolio page-section portfolio`} id="portfolio">
             <div className="container">
               {/* Portfolio Section Heading*/}
               <h2 className="page-section-heading text-center text-uppercase text-secondary mb-5">Portfolio</h2>
@@ -154,7 +151,7 @@ function index({ }) {
               </div>
             </div>
           </section>
-          <section className="page-section" id="contact">
+          <section className={`${localtheme}-portfolio page-section`} id="contact">
             <div className="container">
               {/* Contact Section Heading*/}
               <h2 className="page-section-heading text-center text-uppercase text-secondary mb-5">Contact Me</h2>
@@ -210,7 +207,7 @@ function index({ }) {
               </div>
             </div>
           </section>
-          <footer className="footer">
+          <footer className={`${localtheme}-nav footer `}>
             <div className="container">
               <div className="row justify-content-center">
                 {/* Footer Social Icons*/}
