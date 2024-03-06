@@ -210,11 +210,15 @@ function Homepage() {
     <>
       {isHomePage && <Navbar />} {/* Show Navbar only on the homepage */}
       <div className="hero-container-wrapper">
+      <div className="scroll-icon" onClick={scrollToAbout}>
+            <BsArrowDown className="bounce" />
+          </div>
         <div className='homeContent'>
           <img src={Logo} alt="Get To Work logo" className="logo" />
           <div className='textAnimation'>
             <p>Build an interactive, fully functioning, and customizable website in minutes.</p>
           </div>
+
           <div className='getStarted'>
             <div className="mb-2">
               <Link to="/step1">
@@ -225,11 +229,10 @@ function Homepage() {
             </div>
           </div>
           {/* Animated scrolling icon */}
-          <div className="scroll-icon" onClick={scrollToAbout}>
-            <BsArrowDown className="bounce" />
-          </div>
+
         </div>
       </div>
+      
       {/* About section */}
       <div className="about-section">
         <div className="container about-container">
@@ -238,6 +241,7 @@ function Homepage() {
           <h4 className="text-white">Having spent hours and hours setting up projects we thought, why don't we automate this to help the speed and also share it with the community.</h4>
         </div>
       </div>
+      
       {/* Team section */}
       <div className="team-section white-bg">
         {/* Rest of your content */}

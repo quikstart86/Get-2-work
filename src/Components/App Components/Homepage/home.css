@@ -23,6 +23,10 @@
   }
 }
 
+.homeContent {
+padding-top: none !important;
+}
+
 .homeContent img {
   max-width: 500px;
   height: auto;
@@ -56,7 +60,7 @@ body .btn-primary:hover {
 }
 
 .scroll-icon {
-  font-size: 40px; /* Increase font size for larger arrow */
+  font-size: 50px; /* Increase font size for larger arrow */
   color: #d80202;
   position: absolute;
   bottom: 100px; /* Adjust this value to position the icon vertically */
