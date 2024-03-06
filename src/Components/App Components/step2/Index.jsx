@@ -98,79 +98,79 @@ function Step2() {
 
   return (
     <>
-   <Navbar />
-    <div className="step2-container">
-      <h2 className='text-center pt-3 p-4'>So {FirstName},  what kind of developer are you?</h2>
-      <Dropdown className="text-center" select value={selectedOption} onChange={handleChange}>
-        <Dropdown.Toggle variant="gtw" id="dropdown-basic">
-          I am a...
-        </Dropdown.Toggle>
-        <Dropdown.Menu style={{ justifyContent: "end" }} >
-          {/* on click I am setting thhe value of the handleChange to the selectedOption  */}
-          <Dropdown.Item onClick={() => handleChange('Front-End')} >Front-End</Dropdown.Item>
-          <Dropdown.Item onClick={() => handleChange('Back-End')} >Back-End</Dropdown.Item>
-          <Dropdown.Item onClick={() => handleChange('Full-Stack')} >Full-Stack</Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
+      <Navbar />
+      <div className="step2-container">
+        <h2 className='text-center pt-3 p-4'>So {FirstName},  what kind of developer are you?</h2>
+        <Dropdown className="text-center" select value={selectedOption} onChange={handleChange}>
+          <Dropdown.Toggle variant="gtw" id="dropdown-basic">
+            I am a...
+          </Dropdown.Toggle>
+          <Dropdown.Menu style={{ justifyContent: "end" }} >
+            {/* on click I am setting thhe value of the handleChange to the selectedOption  */}
+            <Dropdown.Item onClick={() => handleChange('Front-End')} >Front-End</Dropdown.Item>
+            <Dropdown.Item onClick={() => handleChange('Back-End')} >Back-End</Dropdown.Item>
+            <Dropdown.Item onClick={() => handleChange('Full-Stack')} >Full-Stack</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
 
-      <h2 className='text-center mt-5 p-5'>What skills do you have ?</h2>
+        <h2 className='text-center mt-5 p-5'>What skills do you have ?</h2>
 
-      {/* here I am giving the child component data thorugh props specifically I am giving it the Options array object */}
-      {/* <Home Options={Options} /> */}
-      {/* using link to passtate to the userComponent homepage  */}
-      <Link to="/test" state={{ Options: Options }}>Preview</Link>
+        {/* here I am giving the child component data thorugh props specifically I am giving it the Options array object */}
+        {/* <Home Options={Options} /> */}
+        {/* using link to passtate to the userComponent homepage  */}
+        {/* <Link to="/test" state={{ Options: Options }}>Preview</Link> */}
 
 
-      {/* here I have the set of Chekboxes the user gets when they choose the either frontend, backend or fullstack */}
+        {/* here I have the set of Chekboxes the user gets when they choose the either frontend, backend or fullstack */}
 
-      <div className='text-center'>
-        {selectedOption === 'Front-End' && (
-          <div className='frontEnd'>
-            <input type="checkbox" onClick={() => { HandlesetOptions("CSS") }}></input>
-            <label >CSS</label> <br />
-            <input type="checkbox" onClick={() => { HandlesetOptions("html") }}></input>
-            <label > HTML</label> <br />
-            <input type="checkbox" onClick={() => { HandlesetOptions("Javascript") }} ></input>
-            <label> Javascript</label> <br />
-          </div>)}
+        <div className='text-center'>
+          {selectedOption === 'Front-End' && (
+            <div className='frontEnd'>
+              <input type="checkbox" onClick={() => { HandlesetOptions("CSS") }}></input>
+              <label >CSS</label> <br />
+              <input type="checkbox" onClick={() => { HandlesetOptions("html") }}></input>
+              <label > HTML</label> <br />
+              <input type="checkbox" onClick={() => { HandlesetOptions("Javascript") }} ></input>
+              <label> Javascript</label> <br />
+            </div>)}
 
-        {selectedOption === 'Back-End' && (
-          <div className='backEnd'>
-            <input type="checkbox" onClick={() => { HandlesetOptions("mySQL") }} ></input>
-            <label > mySQL</label> <br />
-            <input type="checkbox" onClick={() => { HandlesetOptions("mongoDb") }} ></input>
-            <label > mongoDb</label> <br />
-            <input type="checkbox" onClick={() => { HandlesetOptions("Node") }} ></input>
-            <label>Node</label> <br />
-          </div>)}
+          {selectedOption === 'Back-End' && (
+            <div className='backEnd'>
+              <input type="checkbox" onClick={() => { HandlesetOptions("mySQL") }} ></input>
+              <label > mySQL</label> <br />
+              <input type="checkbox" onClick={() => { HandlesetOptions("mongoDb") }} ></input>
+              <label > mongoDb</label> <br />
+              <input type="checkbox" onClick={() => { HandlesetOptions("Node") }} ></input>
+              <label>Node</label> <br />
+            </div>)}
 
-        {selectedOption === 'Full-Stack' && (
-          <div className='fullStack'>
-            <input type="checkbox" onClick={() => HandlesetOptions("CSS")}></input>
-            <label > CSS</label> <br />
-            <input type="checkbox" onClick={() => HandlesetOptions("html")} ></input>
-            <label > HTML</label> <br />
-            <input type="checkbox" onClick={() => { HandlesetOptions("Javascript") }} ></input>
-            <label> Javascript</label> <br />
-            <input type="checkbox" onClick={() => { HandlesetOptions("mySQL") }} ></input>
-            <label > mySQL</label>  <br />
-            <input type="checkbox" onClick={() => { HandlesetOptions("mongoDb") }}></input>
-            <label > mongoDb</label> <br />
-            <input type="checkbox" onClick={() => { HandlesetOptions("Node") }}></input>
-            <label>Node</label> <br />
-          </div>)}
+          {selectedOption === 'Full-Stack' && (
+            <div className='fullStack'>
+              <input type="checkbox" onClick={() => HandlesetOptions("CSS")}></input>
+              <label > CSS</label> <br />
+              <input type="checkbox" onClick={() => HandlesetOptions("html")} ></input>
+              <label > HTML</label> <br />
+              <input type="checkbox" onClick={() => { HandlesetOptions("Javascript") }} ></input>
+              <label> Javascript</label> <br />
+              <input type="checkbox" onClick={() => { HandlesetOptions("mySQL") }} ></input>
+              <label > mySQL</label>  <br />
+              <input type="checkbox" onClick={() => { HandlesetOptions("mongoDb") }}></input>
+              <label > mongoDb</label> <br />
+              <input type="checkbox" onClick={() => { HandlesetOptions("Node") }}></input>
+              <label>Node</label> <br />
+            </div>)}
+        </div>
+
+        <div className='button-container'>
+          <Link to={'/Step1'} >
+            <Button variant="gtw">Prev</Button>
+          </Link>
+          <Link to={'/Step3'}>
+            <Button variant="gtw">Next</Button>
+          </Link>
+        </div>
       </div>
-
-      <div className='step2-container'>
-        <Link to={'/Step1'}>
-          <Button variant="gtw">Prev</Button>
-        </Link>
-        <Link to={'/Step3'}>
-          <Button variant="gtw">Next</Button>
-        </Link>
-      </div>
-    </div>
-    <Footer />
+      <Footer />
     </>
   )
 }

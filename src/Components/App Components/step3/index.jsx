@@ -122,6 +122,7 @@ function Step3() {
             <h2>Choose your theme</h2>
             <p className="w-lg-50">
               Now you get to pick your theme that reflects you and your portfolio!
+              Once you're done, click Finish, where you will get your downloaded files and a view of your portfolio
             </p>
           </div>
         </div>
