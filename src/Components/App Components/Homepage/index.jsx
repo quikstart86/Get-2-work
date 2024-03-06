@@ -177,7 +177,7 @@ import { Form, Button as BootstrapButton } from 'react-bootstrap';
 
 function Homepage() {
   const location = useLocation();
-  const isHomePage = location.pathname === 'Navbar'; 
+  const isHomePage = location.pathname === 'Navbar';
 
   const scrollToAbout = () => {
     const aboutSection = document.querySelector('.about-section');
@@ -230,7 +230,7 @@ function Homepage() {
           </div>
 
         </div>
-        
+
       </div>
                     <div className="about-section">
                 <div className="container about-container">
@@ -246,25 +246,24 @@ function Homepage() {
                   <div className="row">
                     {/* Placeholder team members */}
                     <div className="col-md-2 text-center">
-                      <img src="/src/Images/placeholder1.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2" />
-                      <p>Jonathon</p>
+                      <img src="/src/Images/Jonathan.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
+                      <h6>Jonathan</h6>
                     </div>
                     <div className="col-md-2 text-center">
-                      <img src="/src/Images/placeholder1.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2" />
-                      <p>Matt</p>
+                      <img src="/src/Images/Matt.jpeg" alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
+                      <h6>Matt</h6>
                     </div>
                     <div className="col-md-2 text-center">
-                      <img src="/src/Images/placeholder1.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2" />
-                      <p>Georgie</p>
+                      <img src="/src/Images/Georgie.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
+                      <h6>Georgie</h6>
                     </div>
                     <div className="col-md-2 text-center">
-                      <img src="/src/Images/placeholder1.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2" />
-                      <p>Akila</p>
+                      <img src="/src/Images/Akila.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
+                      <h6>Akila</h6>
                     </div>
                     <div className="col-md-2 text-center">
-                      <img src="/src/Images/placeholder1.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2" />
-                      <p>Tom
-                      </p>
+                      <img src="/src/Images/Thomas.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
+                      <h6>Tom</h6>
                     </div>
                     {/* Add more team members */}
                   </div>
@@ -316,7 +315,7 @@ function Homepage() {
                   </Form>
                 </div>
               </div>
-            
+
     </>
   );
 }
