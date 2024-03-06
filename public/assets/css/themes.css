@@ -1,0 +1,66 @@
+/* Light theme */
+
+.light-nav {
+  background-color: #5E7B9B;
+
+}
+
+.light-card {
+  background-color: #B8EBE7;
+}
+
+.light-hovercard {
+  background-color:#5E7B9B;
+}
+
+.light-portfolio {
+  background-color: #B8EBE7;
+
+}
+
+/* Dark theme */
+
+.dark-nav {
+  background-color: #2F7F9E;
+  color:white; 
+}
+
+.dark-card {
+  background-color: #526066;
+  color:white; 
+}
+
+.dark-hovercard {
+  background-color:#2F7F9E;
+}
+
+.dark-portfolio {
+  background-color: #526066;
+  color:white; 
+}
+
+/* .dark-hovernav {
+  background-color: #B8EBE7;
+} */
+
+/* Colourful theme */
+
+.colourful-nav {
+  background-color: #03B5AA;
+}
+
+/*Colors for Main sections */
+.colourful-card {
+  background-color: #F7A278EF;
+
+}
+
+.colourful-hovercard {
+  background-color:#03B5AA;
+}
+
+
+/*Color for Portfolio and Contact Sections*/
+.colourful-portfolio {
+  background-color: #F7A278EF;
+}
