@@ -8,6 +8,8 @@
   bottom: 0;
   width: 100%;
   text-align: center;
+  padding-top: none !important;
+  padding-bottom: none !important;
 }
 
 /* Footer text styles */
