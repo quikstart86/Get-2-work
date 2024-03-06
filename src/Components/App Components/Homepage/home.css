@@ -28,6 +28,10 @@
 padding-top: none !important;
 }
 
+h6 {
+  font-family: 'League Spartan', sans-serif !important;
+}
+
 .homeContent img {
   max-width: 500px;
   height: auto;
@@ -46,7 +50,7 @@ padding-top: none !important;
 
 .getStarted {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
 }
 
 .getStarted button {
@@ -153,7 +157,7 @@ body .btn-primary:hover {
   /* width: 25%;
   height: 2px;
   background-color: #ffffff;
-} */ 
+} */
 
 /* .red-bg {
   background-color: #d80202;
@@ -265,7 +269,7 @@ font-weight: lighter !important;
   font-family: "League Spartan", sans-serif !important;
   font-weight: lighter !important;
   }
-  
+
 
   @media screen and (max-width: 768px) {
     .textAnimation p {
@@ -276,14 +280,14 @@ font-weight: lighter !important;
       font-size: 50px;
       color: #d80202;
       position: absolute;
-      bottom: 10px; 
+      bottom: 10px;
       left: 50%;
       transform: translateX(-50%);
     }
     .getStarted button {
       margin-left: 10px;
     }
-    
+
   }
 
   @media screen and (max-width: 500px) {
@@ -312,16 +316,16 @@ body {
 }
 
 .getStarted button {
-  margin-left: 0; 
+  margin-left: 0;
 }
 
 .team-section {
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .team-section .col-md-2 {
-  flex: 0 0 calc(50% - 20px); 
+  flex: 0 0 calc(50% - 20px);
   margin: 0 10px;
   margin-bottom: 30px;
 }
@@ -339,4 +343,4 @@ body {
 }
 
 
-  } 
+  }

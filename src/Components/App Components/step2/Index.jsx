@@ -15,7 +15,7 @@ import Home from "../../User Components/Homepage/index"
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 
-//creating an array which I can hold all the checkbox options 
+//creating an array which I can hold all the checkbox options
 const AllChecked = ["CSS", "html", "Javascript", "mySQL", "mongoDb", "Node"]
 
 
@@ -24,7 +24,7 @@ function Step2() {
   // I am using the this to set the state of the selected options as it always starts with frontEnd I set it to frontEnd
   const [selectedOption, setSelectedOption] = useState('Front-End');
 
-  //Creating Options array object to hold the checked items 
+  //Creating Options array object to hold the checked items
   const [Options, setOptions] = useState([{}])
 
   //creating an object called checke to set the intiial state of the checkboxes
@@ -38,10 +38,10 @@ function Step2() {
   localStorage.setItem("devType", JSON.stringify(selectedOption))
 
   const handleChange = (value) => {
-    //want to use setoptions 
-    //want to get the previous array 
-    //iterate over the array usign .map 
-    //if condition where the option.title is in one of the options in new array then I want return a copied version of object with checked state=false   
+    //want to use setoptions
+    //want to get the previous array
+    //iterate over the array usign .map
+    //if condition where the option.title is in one of the options in new array then I want return a copied version of object with checked state=false
     setOptions(prevOptions => (prevOptions.map(option => {
       for (let i = 0; i < AllChecked.length; i++) {
         if (option.title === AllChecked[i]) {
@@ -49,7 +49,7 @@ function Step2() {
         }
 
       }
-      //returning the option element of the array when the whole loop has finished  checking the allCheched array 
+      //returning the option element of the array when the whole loop has finished  checking the allCheched array
       //this mean that when a user switches from front end to anything else or vice versa the checked state will be swtiched to false
       return option
     })))
@@ -66,11 +66,11 @@ function Step2() {
   const HandlesetOptions = (ckBox) => {
     setOptions(
 
-      //takes pararameter previous setOptions 
-      // usuing that use the findIndex method to find where option.title ===cKBox, if there is no such option then findIndex will return -1 
-      //so if index !==-1 then it means that the option already exists 
+      //takes pararameter previous setOptions
+      // usuing that use the findIndex method to find where option.title ===cKBox, if there is no such option then findIndex will return -1
+      //so if index !==-1 then it means that the option already exists
       // so we want to update the previousSetOptions by creating a new Array object, with the new Option combined
-      // then in that index we want to update the checked status 
+      // then in that index we want to update the checked status
       // if it doesn't exist then we create a new array object and just change the checked status
       previousSetOptions => {
         const index = previousSetOptions.findIndex(option => option.title === ckBox)
@@ -92,7 +92,7 @@ function Step2() {
     console.log(Options);
   }, [Options]);
 
-  // will be using this data for the final render 
+  // will be using this data for the final render
   localStorage.setItem('skillsData', JSON.stringify(Options));
 
 
@@ -100,8 +100,8 @@ function Step2() {
     <>
       <Navbar />
       <div className="step2-container">
-        <h2 className='text-center pt-3 p-4'>So {FirstName},  what kind of developer are you?</h2>
-        <Dropdown className="text-center" select value={selectedOption} onChange={handleChange}>
+        <h2 className='gtw-text-center pt-3 p-4'>So {FirstName},  what kind of developer are you?</h2>
+        <Dropdown className="gtw-text-center" select value={selectedOption} onChange={handleChange}>
           <Dropdown.Toggle variant="gtw" id="dropdown-basic">
             I am a...
           </Dropdown.Toggle>
@@ -113,17 +113,13 @@ function Step2() {
           </Dropdown.Menu>
         </Dropdown>
 
-        <h2 className='text-center mt-5 p-5'>What skills do you have ?</h2>
+        <h2 className='gtw-text-center mt-5 p-5'>What skills do you have ?</h2>
 
         {/* here I am giving the child component data thorugh props specifically I am giving it the Options array object */}
         {/* <Home Options={Options} /> */}
-        {/* using link to passtate to the userComponent homepage  */}
-        {/* <Link to="/test" state={{ Options: Options }}>Preview</Link> */}
-
-
         {/* here I have the set of Chekboxes the user gets when they choose the either frontend, backend or fullstack */}
 
-        <div className='text-center'>
+        <div className='gtw-text-center'>
           {selectedOption === 'Front-End' && (
             <div className='frontEnd'>
               <input type="checkbox" onClick={() => { HandlesetOptions("CSS") }}></input>
@@ -162,7 +158,7 @@ function Step2() {
         </div>
 
         <div className='button-container'>
-          <Link to={'/Step1'} >
+          <Link to={'/Step1'}>
             <Button variant="gtw">Prev</Button>
           </Link>
           <Link to={'/Step3'}>
