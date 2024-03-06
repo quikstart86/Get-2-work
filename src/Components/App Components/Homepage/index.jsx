@@ -238,7 +238,7 @@ function Homepage() {
         <div className="container about-container">
           <h2 className="text-black">Are you ready to <i>Get To Work</i>?</h2>
           <hr className="solid"></hr>
-          <h4 className="text-white">Having spent hours and hours setting up projects we thought, why don't we automate this to help the speed and also share it with the community.</h4>
+          <h4 className="text-black">Having spent hours and hours setting up projects we thought, why don't we automate this to help the speed and also share it with the community.</h4>
         </div>
       </div>
       
@@ -250,7 +250,92 @@ function Homepage() {
       <div className="contact-section red-bg">
         {/* Rest of your content */}
       </div>
-      <Footer />
+                    <div className="about-section">
+                <div className="container about-container">
+                  <h2 className="text-black">Are you ready to <i>Get To Work</i>?</h2>
+                  <hr className="solid"></hr>
+                  <h4 className="text-white">Having spent hours and hours setting up projects we thought, why don't we automate this to help the speed and also share it with the community.</h4>
+                </div>
+              </div>
+              {/* Team section */}
+              <div className="team-section white-bg">
+                <div className="container">
+                  <h2 className="text-center">Our Team</h2>
+                  <hr className="solid-red"></hr>
+                  <div className="row">
+                    {/* Placeholder team members */}
+                    <div className="col-md-2 text-center">
+                      <img src="/src/Images/placeholder1.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2" />
+                      <p>Jonathon</p>
+                    </div>
+                    <div className="col-md-2 text-center">
+                      <img src="/src/Images/placeholder1.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2" />
+                      <p>Matt</p>
+                    </div>
+                    <div className="col-md-2 text-center">
+                      <img src="/src/Images/placeholder1.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2" />
+                      <p>Georgie</p>
+                    </div>
+                    <div className="col-md-2 text-center">
+                      <img src="/src/Images/placeholder1.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2" />
+                      <p>Akila</p>
+                    </div>
+                    <div className="col-md-2 text-center">
+                      <img src="/src/Images/placeholder1.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2" />
+                      <p>Tom
+                      </p>
+                    </div>
+                    {/* Add more team members */}
+                  </div>
+                </div>
+              </div>
+              {/* Contact form */}
+              <div className="contact-section red-bg">
+                <div className="container">
+                  <h2 className="text-white">Contact Us</h2>
+                  <hr className="solid"></hr>
+                  <Form onSubmit={handleSubmit}>
+                    <Form.Group controlId="formName">
+                      <Form.Label>Name</Form.Label>
+                      <Form.Control
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="Enter your name"
+                        required
+                      />
+                    </Form.Group>
+                    <Form.Group controlId="formEmail">
+                      <Form.Label>Email</Form.Label>
+                      <Form.Control
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        placeholder="Enter your email"
+                        required
+                      />
+                    </Form.Group>
+                    <Form.Group controlId="formMessage">
+                      <Form.Label>Message</Form.Label>
+                      <Form.Control
+                        as="textarea"
+                        rows={3}
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        placeholder="Enter your message"
+                        required
+                      />
+                    </Form.Group>
+                    <Button variant="light" type="submit">
+                      Submit
+                    </Button>
+                  </Form>
+                </div>
+              </div>
+            
     </>
   );
 }
