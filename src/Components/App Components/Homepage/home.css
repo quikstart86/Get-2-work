@@ -273,7 +273,11 @@ font-weight: lighter !important;
 
   @media screen and (max-width: 768px) {
     .textAnimation p {
-      font-size: 1.4em;
+      font-size: 1.8em;
+      white-space: normal;
+      display: block;
+      animation: none;
+      margin-left: 20px;    
     }
 
     .scroll-icon {
@@ -291,7 +295,15 @@ font-weight: lighter !important;
   }
 
   @media screen and (max-width: 500px) {
-    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap');
+
+    .textAnimation p {
+      font-size: 1.8em;
+      white-space: normal;
+      display: block;
+      animation: none;
+      margin-left: 20px;    
+    }
+  
 
 body {
   margin: 0;
