@@ -11,7 +11,7 @@ function NavbarComponent() {
           <div className="col-md-6 d-flex">
             <Navbar.Brand href="/">
               <img
-                src="./src/Images/G2W-Logo.png"
+                src="/public/assets/Images/G2W-Logo.png"
                 className="d-inline-block align-top"
                 alt="Logo"
               />

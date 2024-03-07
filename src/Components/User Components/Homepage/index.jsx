@@ -62,8 +62,8 @@ function index({ }) {
               <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav ms-auto">
                   <li className="nav-item mx-0 mx-lg-1"><a className={`${localtheme}-hovernav nav-link py-3 px-0 px-lg-3 rounded`} href="#about">About</a></li>
-                  <li className="nav-item mx-0 mx-lg-1"><a className={`${localtheme}-hovernav nav-link py-3 px-0 px-lg-3 rounded`}  href="#skills">Skills</a></li>
-                  <li className="nav-item mx-0 mx-lg-1"><a className={`${localtheme}-hovernav nav-link py-3 px-0 px-lg-3 rounded`}  href="#portfolio">Portfolio</a></li>
+                  <li className="nav-item mx-0 mx-lg-1"><a className={`${localtheme}-hovernav nav-link py-3 px-0 px-lg-3 rounded`} href="#skills">Skills</a></li>
+                  <li className="nav-item mx-0 mx-lg-1"><a className={`${localtheme}-hovernav nav-link py-3 px-0 px-lg-3 rounded`} href="#portfolio">Portfolio</a></li>
                   <li className="nav-item mx-0 mx-lg-1"><a className={`${localtheme}-hovernav nav-link py-3 px-0 px-lg-3 rounded`} href="#contact">Contact</a></li>
                 </ul>
               </div>
@@ -127,7 +127,7 @@ function index({ }) {
                     <div className={`${localtheme}-hovercard portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100`}>
                       <div className="portfolio-item-caption-content text-center "><i className="bi bi-zoom-in"></i></div>
                     </div>
-                    <img className="img-fluid" src="src\Assets\placeholder-image.png" alt="..." />
+                    <img className="img-fluid" src="public\assets\Images\placeholder-image.png" alt="..." />
                   </div>
                 </div>
                 {/* Portfolio Item 2*/}
@@ -136,7 +136,7 @@ function index({ }) {
                     <div className={`${localtheme}-hovercard portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100`}>
                       <div className="portfolio-item-caption-content text-center "><i className="bi bi-zoom-in"></i></div>
                     </div>
-                    <img className="img-fluid" src="src\Assets\placeholder-image.png" alt="..." />
+                    <img className="img-fluid" src="public\assets\Images\placeholder-image.png" alt="..." />
                   </div>
                 </div>
                 {/* Portfolio Item 3*/}
@@ -145,7 +145,7 @@ function index({ }) {
                     <div className={`${localtheme}-hovercard portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100`} >
                       <div className="portfolio-item-caption-content text-center "><i className="bi bi-zoom-in"></i></div>
                     </div>
-                    <img className="img-fluid" src="src\Assets\placeholder-image.png" alt="..." />
+                    <img className="img-fluid" src="public\assets\Images\placeholder-image.png" alt="..." />
                   </div>
                 </div>
               </div>
