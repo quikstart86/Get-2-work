@@ -6,7 +6,7 @@ import Step1 from './Components/App Components/step1/Index.jsx';
 import Step2 from './Components/App Components/step2/Index.jsx';
 import Step3 from './Components/App Components/step3/index.jsx';
 import PortfolioBuilder from './Components/App Components/PortfolioBuilder';
-import BGvideo from '/public/assets/Images/Background-GP.mp4'
+import BGvideo from '/assets/Images/Background-GP.mp4'
 
 
 
