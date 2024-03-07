@@ -8,6 +8,7 @@ import ColourfulThemeImage from "/src/Images/colourful-theme.png";
 import "./step3.css";
 import Navbar from '../Navbar';
 import Footer from '../Footer';
+import ReactDOMServer from 'react-dom/server';
 import MyComponent from '../../User Components/Homepage/index.jsx';
 
 
@@ -48,8 +49,8 @@ function Step3() {
     try {
       // Fetch CSS files
 
-      const cssFile1Response = await fetch('src\Components\User Components\Homepage\Homepage.css')
-      const cssFile2Response = await fetch('src\Components\User Components\Homepage\Homepage.css')
+      const cssFile1Response = await fetch('src/Components/App Components/PortfolioBuilder/themes.css')
+      const cssFile2Response = await fetch('src/Components/User Components/Homepage/Homepage.css')
 
       // Verify if the responses are successful
       if (!cssFile1Response.ok || !cssFile2Response.ok) {
@@ -85,18 +86,16 @@ function Step3() {
       URL.revokeObjectURL(cssFile2Url);
 
       // Get JSX representation of MyComponent
-      const myComponentJSX = <MyComponent />;
+      // const myComponentJSX = <MyComponent />; 
+      const myComponentJSX = ReactDOMServer.renderToStaticMarkup(<MyComponent />);
 
-      // Stringify JSX
-      const myComponentString = JSON.stringify(myComponentJSX);
+      // Create blob for MyComponent JSX
+      const myComponentBlob = new Blob([myComponentJSX], { type: 'text/plain' });
 
-      // Create blob for MyComponent
-      const myComponentBlob = new Blob([myComponentString], { type: 'text/plain' });
-
-      // Create object URL for MyComponent
+      // Create object URL for MyComponent JSX
       const myComponentUrl = URL.createObjectURL(myComponentBlob);
 
-      // Create download link and trigger click event for MyComponent
+      // Create download link and trigger click event for MyComponent JSX
       const myComponentLink = document.createElement('a');
       myComponentLink.href = myComponentUrl;
       myComponentLink.download = 'MyComponent.jsx';
@@ -109,6 +108,8 @@ function Step3() {
     } catch (error) {
       console.error('Error downloading files:', error);
     }
+
+
   };
 
   //END of code for dowloading CSS and homepage data
