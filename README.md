@@ -2,7 +2,7 @@
 
 ## Description 
 
-‘Get To Work’ is a simple one-page portfolio website building app. Aimed at web-developers seeking work, it will help users create a one page portfolio/CV website by having them answer a few simple questions about themselves. It will then output this code as HTML, CSS, and Javascript files (and email them to the user) for them to use as the foundation of their own website. The idea is to cut down the initial legwork of creating their portfolio website allowing them to Get To Work faster.
+Introducing 'Get To Work' – the one-page portfolio website builder for web developers entering the job market. Simply answer a few questions about yourself, and we'll generate custom HTML, CSS, and JavaScript files, emailed to you instantly. Skip the coding legwork and Get To Work faster!
 
 
 ## Table of Contents
@@ -14,7 +14,6 @@
 - [Deployed Link](#deployed-link)
 - [Authors](#authors)
 
-
 ## Team
  * [Matt Dudman](https://github.com/atypicalbitter)
   * [Georgie Lillington](https://github.com/georgielill)
@@ -22,12 +21,9 @@
 * [Akila Dahanayake](https://github.com/Akila504)
 * [Jonathon Clifford](https://github.com/jonnoclifford)
 
-
-
-
 ## About
 
-
+‘Get To Work’ is a simple one-page portfolio website building app. Aimed at web-developers seeking work, it will help users create a one page portfolio/CV website by having them answer a few simple questions about themselves. It will then output this code as HTML, CSS, and Javascript files (and email them to the user) for them to use as the foundation of their own website. The idea is to cut down the initial legwork of creating their portfolio website allowing them to Get To Work faster.
 
 ## License
 
@@ -46,7 +42,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 ## Deployed Link
- * [See Here]
+ * [See Here](https://get-2-work.netlify.app/)
 
 ## Authors
  * [Matt Dudman](https://github.com/atypicalbitter)

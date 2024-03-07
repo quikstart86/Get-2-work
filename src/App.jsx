@@ -15,7 +15,6 @@ function App() {
   return (
     <>
       <Router>
-        {/* Video background */}
         <div className="video-bg">
           <video autoPlay loop muted className="video-bg" key="video-bg">
             <source src={BGvideo} type="video/mp4" />

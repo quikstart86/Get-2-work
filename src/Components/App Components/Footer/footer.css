@@ -1,5 +1,3 @@
-
-/* Footer styles */
 .footer {
   background-color: rgba(255, 255, 255, 0.85);
   padding: 10px 0;
@@ -12,7 +10,6 @@
   padding-bottom: none !important;
 }
 
-/* Footer text styles */
 .footer-div, .footer-div p {
   color: black;
   font-size: 1em !important;
@@ -23,7 +20,6 @@
   font-size: 1em !important;
 }
 
-/* Media query for responsiveness */
 @media (max-width: 991.98px) {
   .footer {
     background-color: #fff;
