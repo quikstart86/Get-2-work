@@ -46,7 +46,7 @@ function Homepage() {
 
   return (
     <>
-      {isHomePage && <Navbar />} {/* Show Navbar only on the homepage */}
+      {isHomePage && <Navbar />} 
       <div className="hero-container-wrapper">
       <div className="scroll-icon" onClick={scrollToAbout}>
             <BsArrowDown className="bounce" />
@@ -66,9 +66,7 @@ function Homepage() {
               </Link>
             </div>
           </div>
-
         </div>
-
       </div>
       <div className="about-section">
         <div className="container about-container">
@@ -83,13 +81,11 @@ function Homepage() {
           </div>
         </div>
       </div>
-              {/* Team section */}
               <div className="team-section">
                 <div className="container">
                   <h2 className="text-center">Our Team</h2>
                   <hr className="solid-red"></hr>
                   <div className="row">
-                    {/* Placeholder team members */}
                     <div className="col-md-2 text-center">
                       <img src={Jonathan} alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
                       <h6>Jonathan</h6>
@@ -110,11 +106,9 @@ function Homepage() {
                       <img src={Tom} alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
                       <h6>Tom</h6>
                     </div>
-                    {/* Add more team members */}
                   </div>
                 </div>
               </div>
-              {/* Contact form */}
               <div className="contact-section">
                 <div className="container">
                   <h2 className="text-black">Contact Us</h2>

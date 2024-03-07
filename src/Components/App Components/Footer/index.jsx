@@ -7,10 +7,8 @@ import './footer.css';
 function Footer() {
   const location = useLocation();
 
-  // Check if the current pathname is the homepage
   const isHomepage = location.pathname === '/';
 
-  // If it's not the homepage, return null to hide the footer
   if (!isHomepage) {
     return null;
   }

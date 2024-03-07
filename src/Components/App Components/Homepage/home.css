@@ -37,16 +37,6 @@ h6 {
   height: auto;
 }
 
-/* .getStarted button {
-  width: auto;
-  height: auto;
-  font-family: "League Spartan" !important;
-  font-size: 1.5em !important;
-  border-radius: 40px !important;
-  background-color: #d80202 !important;
-  transition: background-color 0.8s ease, color 0.8s ease;
-  border-style: none !important;
-} */
 
 .getStarted {
   display: flex;
@@ -128,8 +118,6 @@ body .btn-primary:hover {
   animation: bounce 2s infinite;
 }
 
-
-/* About section */
 .about-section {
   text-align: center;
 }
@@ -149,24 +137,11 @@ body .btn-primary:hover {
   max-width: 750px;
 }
 
-/* .about-container .divider {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-700%);
-  left: 37.5%; /* Adjust this value to center the divider */
-  /* width: 25%;
-  height: 2px;
-  background-color: #ffffff;
-} */
-
-/* .red-bg {
-  background-color: #d80202;
-} */
 
 .text-white {
   padding: 50px 0px;
 }
-/* Team section */
+
 .team-section {
   padding: 50px 0;
   text-align: center;
@@ -190,7 +165,6 @@ body .btn-primary:hover {
   max-width: 150px;
 }
 
-/* Contact section */
 .contact-section {
   padding: 20px 0;
   text-align: center;
