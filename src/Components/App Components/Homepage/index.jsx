@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '/src/Images/G2W-Logo.png';
+import Logo from '/public/assets/Images/Revised Logo.png'
 import '../Homepage/home.css';
 import Button from 'react-bootstrap/Button';
 import Navbar from '../Navbar';
