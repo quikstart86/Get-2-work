@@ -7,6 +7,11 @@ import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { BsArrowDown } from 'react-icons/bs';
 import { Form, Button as BootstrapButton } from 'react-bootstrap';
+import Akila from '/public/assets/Images/Akila.jpg'
+import Georgie from '/public/assets/Images/Georgie.jpg'
+import Jonathan from '/public/assets/Images/Jonathan.jpg'
+import Matt from '/public/assets/Images/Matt.jpeg'
+import Tom from '/public/assets/Images/Thomas.jpg'
 
 function Homepage() {
   const location = useLocation();
@@ -86,23 +91,23 @@ function Homepage() {
                   <div className="row">
                     {/* Placeholder team members */}
                     <div className="col-md-2 text-center">
-                      <img src="/src/Images/Jonathan.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
+                      <img src={Jonathan} alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
                       <h6>Jonathan</h6>
                     </div>
                     <div className="col-md-2 text-center">
-                      <img src="/src/Images/Matt.jpeg" alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
+                      <img src={Matt} alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
                       <h6>Matt</h6>
                     </div>
                     <div className="col-md-2 text-center">
-                      <img src="/src/Images/Georgie.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
+                      <img src={Georgie} alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
                       <h6>Georgie</h6>
                     </div>
                     <div className="col-md-2 text-center">
-                      <img src="/src/Images/Akila.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
+                      <img src={Akila} alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
                       <h6>Akila</h6>
                     </div>
                     <div className="col-md-2 text-center">
-                      <img src="/src/Images/Thomas.jpg" alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
+                      <img src={Tom} alt="Placeholder" className="img-fluid rounded-circle mb-2 p-2" />
                       <h6>Tom</h6>
                     </div>
                     {/* Add more team members */}

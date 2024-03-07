@@ -6,6 +6,7 @@ import Step1 from './Components/App Components/step1/Index.jsx';
 import Step2 from './Components/App Components/step2/Index.jsx';
 import Step3 from './Components/App Components/step3/index.jsx';
 import PortfolioBuilder from './Components/App Components/PortfolioBuilder';
+import BGvideo from '/public/assets/Images/Background-GP.mp4'
 
 
 
@@ -17,7 +18,7 @@ function App() {
         {/* Video background */}
         <div className="video-bg">
           <video autoPlay loop muted className="video-bg" key="video-bg">
-            <source src="./src/Images/Background-GP.mp4" type="video/mp4" />
+            <source src={BGvideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
