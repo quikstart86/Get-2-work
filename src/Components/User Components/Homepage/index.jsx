@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import './Homepage.css'
 import '../../App Components/PortfolioBuilder/themes.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
-
+import placeholder from '/public/assets/Images/placeholder-image.png'
 
 
 
@@ -127,7 +127,7 @@ function index({ }) {
                     <div className={`${localtheme}-hovercard portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100`}>
                       <div className="portfolio-item-caption-content text-center "><i className="bi bi-zoom-in"></i></div>
                     </div>
-                    <img className="img-fluid" src="public\assets\Images\placeholder-image.png" alt="..." />
+                    <img className="img-fluid" src={placeholder} alt="..." />
                   </div>
                 </div>
                 {/* Portfolio Item 2*/}
@@ -136,7 +136,7 @@ function index({ }) {
                     <div className={`${localtheme}-hovercard portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100`}>
                       <div className="portfolio-item-caption-content text-center "><i className="bi bi-zoom-in"></i></div>
                     </div>
-                    <img className="img-fluid" src="public\assets\Images\placeholder-image.png" alt="..." />
+                    <img className="img-fluid" src={placeholder} alt="..." />
                   </div>
                 </div>
                 {/* Portfolio Item 3*/}
@@ -145,7 +145,7 @@ function index({ }) {
                     <div className={`${localtheme}-hovercard portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100`} >
                       <div className="portfolio-item-caption-content text-center "><i className="bi bi-zoom-in"></i></div>
                     </div>
-                    <img className="img-fluid" src="public\assets\Images\placeholder-image.png" alt="..." />
+                    <img className="img-fluid" src={placeholder} alt="..." />
                   </div>
                 </div>
               </div>
