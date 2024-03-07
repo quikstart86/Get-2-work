@@ -9,6 +9,7 @@ Introducing 'Get To Work' – the one-page portfolio website builder for web dev
 
 - [Team](#team)
 - [About](#about)
+- [Technologies](#technologies)
 - [License](#license)
 - [Repo](#repo)
 - [Deployed Link](#deployed-link)
@@ -24,6 +25,35 @@ Introducing 'Get To Work' – the one-page portfolio website builder for web dev
 ## About
 
 ‘Get To Work’ is a simple one-page portfolio website building app. Aimed at web-developers seeking work, it will help users create a one page portfolio/CV website by having them answer a few simple questions about themselves. It will then output this code as HTML, CSS, and Javascript files (and email them to the user) for them to use as the foundation of their own website. The idea is to cut down the initial legwork of creating their portfolio website allowing them to Get To Work faster.
+
+Below are some screenshots of our live application 
+
+![Alt text](<src/Images/Screenshot 2024-03-07 at 20.29.52.png>)
+
+![Alt text](<src/Images/Screenshot 2024-03-07 at 20.30.26.png>)
+
+![Alt text](<src/Images/Screenshot 2024-03-07 at 20.30.53.png>)
+
+And below is the user produced site 
+
+![Alt text](<src/Images/Screenshot 2024-03-07 at 20.38.11.png>)
+
+## Technologies
+
+Below is a lsit of the technologies we used throughout this project
+
+- React.js - Dynamic UI components
+- Vite.js - build tool
+- Node.js - Server-side Logic
+- Netlify - Deployment
+- npm - for managing dependencies
+- Excalidraw & Figma - Wireframing
+- Coolors - Colours for accessibility / UX
+- React Places - For location (API)
+- Inquirer.js
+- React-Icons
+- Axios
+- React-Bootstrap - for responsive design and layout
 
 ## License
 
