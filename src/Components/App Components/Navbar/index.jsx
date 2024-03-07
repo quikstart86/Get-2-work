@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import './Navbar.css';
+import logo from '/public/assets/Images/G2W-Logo.png'
 
 function NavbarComponent() {
   return (
@@ -11,7 +12,7 @@ function NavbarComponent() {
           <div className="col-md-6 d-flex">
             <Navbar.Brand href="/">
               <img
-                src="/public/assets/Images/G2W-Logo.png"
+                src={logo}
                 className="d-inline-block align-top"
                 alt="Logo"
               />
